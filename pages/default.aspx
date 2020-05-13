@@ -8,6 +8,10 @@
     <title>Bilgisayar Topla-AnaSayfa</title>
     <link rel="stylesheet" type="text/css" href="../Style.css" />
     <link href="../fontawesome/css/all.css" rel="stylesheet" />
+    <script src="../components/sliderengine/jquery.js"></script>
+    <script src="../components/sliderengine/amazingslider.js"></script>
+    <link rel="stylesheet" type="text/css" href="../components/sliderengine/amazingslider-1.css">
+    <script src="../components/sliderengine/initslider-1.js"></script>
 </head>
 <body>
     <form id="form1" runat="server">
@@ -67,15 +71,44 @@
                         </li>
                     </ul>
                 </div>
+                <div id="footer">
+                    <h2>Designed by <br />
+                        <a target="_blank" href="https://www.enesozcelik.com">Mustafa Enes Özçelik</a>
+                    </h2>
+                </div>
             </div>
-            <div id="page">
-
-            </div>
-            <div id="footer">
-                <h2 style="text-align:center; color:white; font-family:Arial;" >Designed by 
-                    <a target="_blank" href="https://www.enesozcelik.com">Mustafa Enes Özçelik</a>
-                </h2>
-            </div>
+            
+            <asp:Panel ID="page" runat="server">
+                
+                <asp:Panel ID="slider" runat="server">
+                    <div class="amazingslider-wrapper" id="amazingslider-wrapper-1" style="display:block;position:relative;max-width:1100px;margin:0px auto 0px;">
+                        <div class="amazingslider" id="amazingslider-1" style="display:block;position:relative;margin:0 auto;">
+                            <ul class="amazingslider-slides" style="display:none;">
+                                <li><img src="../components/images/MSI%20Oyuncu%20Bilgisayarlar%C4%B1.jpg" alt="MSI Oyuncu Bilgisayarları"  title="MSI Oyuncu Bilgisayarları" />
+                                </li>
+                                <li><img src="../components/images/Ki%C5%9Fiye%20%C3%96zel%20Toplanan%20Sistemler.jpg" alt="Kişiye Özel Toplanan Sistemler"  title="Kişiye Özel Toplanan Sistemler" />
+                                </li>
+                                <li><img src="../components/images/MSI%20Oyun%20Ekipmanlar%C4%B1.jpg" alt="MSI Oyun Ekipmanları"  title="MSI Oyun Ekipmanları" />
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </asp:Panel>
+                
+                <!-------------------------PRODUCTS----------------------------------->
+                <asp:Panel ID="products" CssClass="mainPageProducts" runat="server">
+                    <asp:Panel ID="productSection" CssClass="mainPageProductSection" runat="server">
+                        <asp:Panel ID="product" CssClass="mainPageProduct" runat="server">
+                            <asp:Label ID="productName" CssClass="mainPageProductName" runat="server" Text="Label">ÜRÜN ADI 1</asp:Label>
+                            <hr />
+                        </asp:Panel>
+                    </asp:Panel>
+                </asp:Panel>
+                <!-------------------------PRODUCTS END----------------------------------->
+                
+            </asp:Panel>
+            
+            
         </asp:Panel>
     </form>
 </body>

@@ -67,10 +67,37 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="components\anasayfa.html" />
-    <Content Include="components\footer.html" />
-    <Content Include="components\header.html" />
-    <Content Include="components\sidebar-menu.html" />
+    <Content Include="components\images\Kişiye Özel Toplanan Sistemler-tn.jpg" />
+    <Content Include="components\images\Kişiye Özel Toplanan Sistemler.jpg" />
+    <Content Include="components\images\MSI Oyun Ekipmanları-tn.jpg" />
+    <Content Include="components\images\MSI Oyun Ekipmanları.jpg" />
+    <Content Include="components\images\MSI Oyuncu Bilgisayarları-tn.jpg" />
+    <Content Include="components\images\MSI Oyuncu Bilgisayarları.jpg" />
+    <Content Include="components\sliderengine\amazingslider-1.css" />
+    <Content Include="components\sliderengine\amazingslider.js" />
+    <Content Include="components\sliderengine\carouselarrows-32-32-0.png" />
+    <Content Include="components\sliderengine\froogaloop2.min.js" />
+    <Content Include="components\sliderengine\html5boxplayer.swf" />
+    <Content Include="components\sliderengine\html5boxplayer_fullscreen.png" />
+    <Content Include="components\sliderengine\html5boxplayer_hd.png" />
+    <Content Include="components\sliderengine\html5boxplayer_playpause.png" />
+    <Content Include="components\sliderengine\html5boxplayer_playvideo.png" />
+    <Content Include="components\sliderengine\html5boxplayer_volume.png" />
+    <Content Include="components\sliderengine\initslider-1.js" />
+    <Content Include="components\sliderengine\jquery.js" />
+    <Content Include="components\sliderengine\lightbox-close.png" />
+    <Content Include="components\sliderengine\lightbox-loading.gif" />
+    <Content Include="components\sliderengine\lightbox-navnext.png" />
+    <Content Include="components\sliderengine\lightbox-navprev.png" />
+    <Content Include="components\sliderengine\lightbox-next.png" />
+    <Content Include="components\sliderengine\lightbox-pause.png" />
+    <Content Include="components\sliderengine\lightbox-play.png" />
+    <Content Include="components\sliderengine\lightbox-playvideo.png" />
+    <Content Include="components\sliderengine\lightbox-prev.png" />
+    <Content Include="components\sliderengine\navarrows-28-28-0.png" />
+    <Content Include="components\sliderengine\navbuttonbgimage-28-28-0.png" />
+    <Content Include="components\sliderengine\navplaypause-28-28-0.png" />
+    <Content Include="components\sliderengine\playvideo-64-64-0.png" />
     <Content Include="fontawesome\css\all.css" />
     <Content Include="fontawesome\css\all.min.css" />
     <Content Include="fontawesome\css\brands.css" />
@@ -1815,6 +1842,7 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Models\" />
+    <Folder Include="Scripts\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
