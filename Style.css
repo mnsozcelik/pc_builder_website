@@ -1,0 +1,155 @@
+﻿body {
+    margin:0;
+    height:950px;
+}
+
+#header {
+    box-shadow: 10px 10px 66px -4px rgba(0,0,0,0.75);
+    width: 100%;
+    height: 75px;
+    background-color: rgba(0, 40, 58, 1);
+    position: relative;
+    position: fixed;
+}
+#headerLogo {
+    float: left;
+    width: 20%;
+    background-color: rgba(0, 130, 189, 1);
+    height:75px;
+}
+
+.searchInput {
+    position: fixed;
+    left: 310px;
+    top: 10px;
+    width: 300px;
+    height: 50px;
+    font-size: 18px;
+    text-align: center;
+}
+
+#profile-menu{
+    float:right;
+    width:20%;
+    height:75px;
+}
+#profile-menu ul{
+     list-style:none;
+     padding:0; 
+     margin:0;
+}
+#profile-menu ul li{
+    position:relative;
+}
+#profile-menu ul li a{
+    display:block;
+    color:white;
+    background:rgba(0, 130, 189, 1);
+    text-decoration:none;
+    font: bold 18px arial;
+    width:100%;
+    height:75px;
+    text-align:center;
+}
+
+#profile-menu ul ul li a{
+    display:block;
+    color:white;
+    background:crimson;
+    text-decoration:none;
+    font: bold 18px arial;
+    width:100%;
+    height:75px;
+    text-align:center;
+}
+
+#profile-menu ul li a strong {
+    position: relative;
+    left: -55px;
+    top: 30%;
+    font-size:x-large;
+}
+#profile-menu ul ul li a strong {
+    position: relative;
+    left: -100px;
+    top: 30%;
+    font-size:x-large;
+}
+
+#profile-menu ul li a:hover{
+    background: #FFF;
+    color:rgba(0, 40, 58, 1);
+}
+
+#profile-menu ul ul{
+    display:none;
+    left:0; top:34px;
+}
+
+#profile-menu ul:hover ul{
+    display:block;
+    box-shadow: 10px 10px 66px -4px rgba(0,0,0,0.75);
+}
+
+#sidebarMenu {
+    box-shadow: 10px 10px 66px -4px rgba(0,0,0,0.75);
+    position: fixed;
+    float: left;
+    height: 100%;
+    width: 20%;
+    background-color: rgba(0, 40, 58, 1);
+}
+#menu{
+    width:100%;
+    height:250px;
+    margin:0 0 0 0;
+}
+#menu ul{
+    margin:0;
+    padding:0;
+    list-style:none;
+}
+
+#menu ul li a{
+    display:block;
+    width:100%;
+    height:50px;
+    background:rgba(0, 40, 58, 1);
+    color:#FFF;
+    font:bold 12px arial;
+    text-decoration:none;
+}
+#menu ul li a:hover{
+    background-color:#FFF;
+    color:rgba(0, 40, 58, 1);
+}
+
+#menu ul li a strong{
+    position: relative;
+    left: 25px;
+    top: 30%;
+    font-size:large;
+}
+
+#page {
+    float:right;
+    height: 800px;
+    width: 80%;
+    background-color:aliceblue;
+}
+#body{
+    padding-top:75px;
+}
+#footer{
+    float:right;
+    height:75px;
+    width:80%;
+    background-color:rgba(0, 40, 58, 1);
+}
+#footer h2 a{
+    color:white; 
+    text-decoration-line:none;
+}
+#footer h2 a:hover{
+    color: crimson;
+}
