@@ -12,7 +12,6 @@
     <form id="form1" runat="server">
         <asp:Panel ID="header" runat="server">
          <asp:ImageButton ID="headerLogo" ImageUrl="../src/logo.png" runat="server" />
-         <asp:TextBox ID="searchInput" runat="server" CssClass="searchInput"> ARA..</asp:TextBox>
          
          <div id="profile-menu">
             <ul>

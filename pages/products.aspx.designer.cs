@@ -132,6 +132,15 @@ namespace pc_toplama_sistemi.pages
         protected global::System.Web.UI.WebControls.Panel page;
 
         /// <summary>
+        /// aboutUsHead denetimi.
+        /// </summary>
+        /// <remarks>
+        /// Otomatik üretilmiş alan.
+        /// Değiştirmek için, alan bildirimini tasarımcı dosyasından arka plan kod dosyasına taşıyın.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label aboutUsHead;
+
+        /// <summary>
         /// productsPageProducts denetimi.
         /// </summary>
         /// <remarks>
@@ -166,5 +175,23 @@ namespace pc_toplama_sistemi.pages
         /// Değiştirmek için, alan bildirimini tasarımcı dosyasından arka plan kod dosyasına taşıyın.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label productsPageProductName;
+
+        /// <summary>
+        /// productsPageProductImage denetimi.
+        /// </summary>
+        /// <remarks>
+        /// Otomatik üretilmiş alan.
+        /// Değiştirmek için, alan bildirimini tasarımcı dosyasından arka plan kod dosyasına taşıyın.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Image productsPageProductImage;
+
+        /// <summary>
+        /// productsPageProductButton denetimi.
+        /// </summary>
+        /// <remarks>
+        /// Otomatik üretilmiş alan.
+        /// Değiştirmek için, alan bildirimini tasarımcı dosyasından arka plan kod dosyasına taşıyın.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button productsPageProductButton;
     }
 }

@@ -13,7 +13,6 @@
     <form id="form1" runat="server">
         <asp:Panel ID="header" runat="server">
          <asp:ImageButton ID="headerLogo" ImageUrl="../src/logo.png" runat="server" />
-         <asp:TextBox ID="searchInput" runat="server" CssClass="searchInput"> ARA..</asp:TextBox>
          
          <div id="profile-menu">
             <ul>
@@ -69,7 +68,22 @@
                 </div>
             </div>
             <asp:Panel ID="page" runat="server">
-                hakkımızda
+                <asp:Panel ID="aboutUsSection" runat="server">
+                    <asp:Label ID="aboutUsHead" CssClass="aboutUsHead" runat="server" Text="HAKKIMIZDA"></asp:Label>
+                    <asp:Label ID="aboutUsText" runat="server">
+                        <br />
+                        <br />
+                        HAKKIMIZDAHAKKIMIZDAHAKKIMIZDAHAKKIMIZDAHAKKIMIZDAHAKKIMIZDAHAKKIMIZDAHAKKIMIZDA
+                        HAKKIMIZDAHAKKIMIZDAHAKKIMIZDAHAKKIMIZDAHAKKIMIZDAHAKKIMIZDAHAKKIMIZDAHAKKIMIZDA
+                        HAKKIMIZDAHAKKIMIZDAHAKKIMIZDAHAKKIMIZDAHAKKIMIZDAHAKKIMIZDAHAKKIMIZDAHAKKIMIZDA
+                        HAKKIMIZDAHAKKIMIZDAHAKKIMIZDAHAKKIMIZDAHAKKIMIZDAHAKKIMIZDAHAKKIMIZDAHAKKIMIZDA
+                        HAKKIMIZDAHAKKIMIZDAHAKKIMIZDAHAKKIMIZDAHAKKIMIZDAHAKKIMIZDAHAKKIMIZDAHAKKIMIZDA
+                        HAKKIMIZDAHAKKIMIZDAHAKKIMIZDAHAKKIMIZDAHAKKIMIZDAHAKKIMIZDAHAKKIMIZDAHAKKIMIZDA
+                        HAKKIMIZDAHAKKIMIZDAHAKKIMIZDAHAKKIMIZDAHAKKIMIZDAHAKKIMIZDAHAKKIMIZDAHAKKIMIZDA
+                        HAKKIMIZDAHAKKIMIZDAHAKKIMIZDAHAKKIMIZDAHAKKIMIZDAHAKKIMIZDAHAKKIMIZDAHAKKIMIZDA
+                        HAKKIMIZDAHAKKIMIZDAHAKKIMIZDAHAKKIMIZDAHAKKIMIZDAHAKKIMIZDA
+                    </asp:Label>
+                </asp:Panel>
             </asp:Panel>
             <div id="footer">
                 <h2 style="text-align:center; color:white; font-family:Arial;" >Designed by 

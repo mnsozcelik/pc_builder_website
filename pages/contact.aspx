@@ -13,7 +13,6 @@
     <form id="form1" runat="server">
         <asp:Panel ID="header" runat="server">
          <asp:ImageButton ID="headerLogo" ImageUrl="../src/logo.png" runat="server" />
-         <asp:TextBox ID="searchInput" runat="server" CssClass="searchInput"> ARA..</asp:TextBox>
          
          <div id="profile-menu">
             <ul>
@@ -69,7 +68,29 @@
                 </div>
             </div>
             <asp:Panel ID="page" runat="server">
-                iletişim
+                <asp:Label ID="contactHead" CssClass="aboutUsHead" runat="server" Text="İLETİŞİM"></asp:Label>
+
+                <asp:Panel ID="contactSection" runat="server">
+                    <asp:Panel ID="contactNameSurname" CssClass="contactSections" runat="server">
+                        <asp:Label ID="contactNameLabel" CssClass="contactLabels" runat="server" Text="ADINIZ-SOYADINIZ:"></asp:Label>
+                        <asp:TextBox ID="contactNameTB" CssClass="contactTB" runat="server" TabIndex="1"></asp:TextBox>
+                    </asp:Panel>
+                    <br />
+                    <asp:Panel ID="contactMail" CssClass="contactSections" runat="server">
+                        <asp:Label ID="contactMailLabel" CssClass="contactLabels" runat="server" Text="E-POSTA:"></asp:Label>
+                        <asp:TextBox ID="contactMailTB" CssClass="contactTB" runat="server" TabIndex="2"></asp:TextBox>
+                    </asp:Panel>
+                    <br />
+                    <asp:Panel ID="contactMessage" CssClass="contactSections" runat="server">
+                        <asp:Label ID="contactMessageLabel" CssClass="contactLabels" runat="server" Text="MESAJINIZ:"></asp:Label>
+                        <asp:TextBox ID="contactMessageTB" CssClass="contactTB" runat="server" MaxLength="750" TextMode="MultiLine" TabIndex="3"></asp:TextBox>
+                    </asp:Panel>
+                    <br />
+                    <asp:Panel ID="contactButtonSection" runat="server">
+                        <asp:Button ID="contactButton"  CssClass="contactTB" runat="server" Text="Button" />
+                    </asp:Panel>
+                </asp:Panel>
+                W
             </asp:Panel>
             <div id="footer">
                 <h2 style="text-align:center; color:white; font-family:Arial;" >Designed by 

@@ -69,15 +69,19 @@
                 </div>
             </div>
             <asp:Panel ID="page" runat="server">
-                
+                <asp:Label ID="aboutUsHead" CssClass="aboutUsHead" runat="server" Text="ÜRÜNLER"></asp:Label>
                 <!-------------------------PRODUCTS----------------------------------->
                 <asp:Panel ID="productsPageProducts" CssClass="productsPageProducts" runat="server">
-                    <asp:Panel ID="productsPageProductSection" CssClass="productsPageProductSection" runat="server">
-                        <asp:Panel ID="productsPageProduct" CssClass="productsPageProducts" runat="server">
-                            <asp:Label ID="productsPageProductName" CssClass="productsPageProductName" runat="server" Text="Label"> ÜRÜN ADI</asp:Label>
-                            <hr />
+
+                    <asp:Panel ID="productsPageProductSection" CssClass="mainPageProductSection" runat="server">
+                        <asp:Panel ID="productsPageProduct" CssClass="mainPageProduct" runat="server">
+                            <asp:Label ID="productsPageProductName" CssClass="mainPageProductName" runat="server" Text="Label"> ÜRÜN ADI</asp:Label>
+                            <asp:Image ID="productsPageProductImage" ImageUrl="~/src/urun-foto.png" CssClass="mainPageProductImage" runat="server" />
+                            <asp:Button ID="productsPageProductButton" CssClass="mainPageProductButton" runat="server" Text="Detay" />
+                        
                         </asp:Panel>
-                    </asp:Panel>
+                    </asp:Panel>                 
+
                 </asp:Panel>
                 <!-------------------------PRODUCTS END----------------------------------->
                 

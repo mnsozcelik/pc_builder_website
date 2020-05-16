@@ -10,7 +10,7 @@
     <link href="../fontawesome/css/all.css" rel="stylesheet" />
     <script src="../components/sliderengine/jquery.js"></script>
     <script src="../components/sliderengine/amazingslider.js"></script>
-    <link rel="stylesheet" type="text/css" href="../components/sliderengine/amazingslider-1.css">
+    <link rel="stylesheet" type="text/css" href="../components/sliderengine/amazingslider-1.css"/>
     <script src="../components/sliderengine/initslider-1.js"></script>
 </head>
 <body>
@@ -96,12 +96,15 @@
                 
                 <!-------------------------PRODUCTS----------------------------------->
                 <asp:Panel ID="products" CssClass="mainPageProducts" runat="server">
+
                     <asp:Panel ID="productSection" CssClass="mainPageProductSection" runat="server">
                         <asp:Panel ID="product" CssClass="mainPageProduct" runat="server">
                             <asp:Label ID="productName" CssClass="mainPageProductName" runat="server" Text="Label">ÜRÜN ADI 1</asp:Label>
-                            <hr />
+                            <asp:Image ID="productImage" ImageUrl="~/src/urun-foto.png" CssClass="mainPageProductImage" runat="server" />
+                            <asp:Button ID="productButton" CssClass="mainPageProductButton" runat="server" Text="Detay" />
                         </asp:Panel>
                     </asp:Panel>
+                    
                 </asp:Panel>
                 <!-------------------------PRODUCTS END----------------------------------->
                 
