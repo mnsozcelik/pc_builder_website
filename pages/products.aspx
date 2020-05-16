@@ -69,7 +69,18 @@
                 </div>
             </div>
             <asp:Panel ID="page" runat="server">
-                ürünler
+                
+                <!-------------------------PRODUCTS----------------------------------->
+                <asp:Panel ID="productsPageProducts" CssClass="productsPageProducts" runat="server">
+                    <asp:Panel ID="productsPageProductSection" CssClass="productsPageProductSection" runat="server">
+                        <asp:Panel ID="productsPageProduct" CssClass="productsPageProducts" runat="server">
+                            <asp:Label ID="productsPageProductName" CssClass="productsPageProductName" runat="server" Text="Label"> ÜRÜN ADI</asp:Label>
+                            <hr />
+                        </asp:Panel>
+                    </asp:Panel>
+                </asp:Panel>
+                <!-------------------------PRODUCTS END----------------------------------->
+                
             </asp:Panel>
             <div id="footer">
                 <h2 style="text-align:center; color:white; font-family:Arial;" >Designed by 

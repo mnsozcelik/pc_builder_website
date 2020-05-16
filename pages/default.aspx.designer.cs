@@ -42,15 +42,6 @@ namespace pc_toplama_sistemi.pages
         protected global::System.Web.UI.WebControls.ImageButton headerLogo;
 
         /// <summary>
-        /// searchInput denetimi.
-        /// </summary>
-        /// <remarks>
-        /// Otomatik üretilmiş alan.
-        /// Değiştirmek için, alan bildirimini tasarımcı dosyasından arka plan kod dosyasına taşıyın.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox searchInput;
-
-        /// <summary>
         /// profileButton denetimi.
         /// </summary>
         /// <remarks>
