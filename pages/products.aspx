@@ -69,7 +69,6 @@
                 </div>
             </div>
             <asp:Panel ID="page" runat="server">
-                <asp:Label ID="aboutUsHead" CssClass="aboutUsHead" runat="server" Text="ÜRÜNLER"></asp:Label>
                 <!-------------------------PRODUCTS----------------------------------->
                 <asp:Panel ID="productsPageProducts" CssClass="productsPageProducts" runat="server">
 
@@ -80,7 +79,31 @@
                             <asp:Button ID="productsPageProductButton" CssClass="mainPageProductButton" runat="server" Text="Detay" />
                         
                         </asp:Panel>
-                    </asp:Panel>                 
+                    </asp:Panel>
+                    <asp:Panel ID="Panel1" CssClass="mainPageProductSection" runat="server">
+                        <asp:Panel ID="Panel2" CssClass="mainPageProduct" runat="server">
+                            <asp:Label ID="Label1" CssClass="mainPageProductName" runat="server" Text="Label"> ÜRÜN ADI</asp:Label>
+                            <asp:Image ID="Image1" ImageUrl="~/src/urun-foto.png" CssClass="mainPageProductImage" runat="server" />
+                            <asp:Button ID="Button1" CssClass="mainPageProductButton" runat="server" Text="Detay" />
+                        
+                        </asp:Panel>
+                    </asp:Panel>  
+                    <asp:Panel ID="Panel3" CssClass="mainPageProductSection" runat="server">
+                        <asp:Panel ID="Panel4" CssClass="mainPageProduct" runat="server">
+                            <asp:Label ID="Label2" CssClass="mainPageProductName" runat="server" Text="Label"> ÜRÜN ADI</asp:Label>
+                            <asp:Image ID="Image2" ImageUrl="~/src/urun-foto.png" CssClass="mainPageProductImage" runat="server" />
+                            <asp:Button ID="Button2" CssClass="mainPageProductButton" runat="server" Text="Detay" />
+                        
+                        </asp:Panel>
+                    </asp:Panel>  
+                    <asp:Panel ID="Panel5" CssClass="mainPageProductSection" runat="server">
+                        <asp:Panel ID="Panel6" CssClass="mainPageProduct" runat="server">
+                            <asp:Label ID="Label3" CssClass="mainPageProductName" runat="server" Text="Label"> ÜRÜN ADI</asp:Label>
+                            <asp:Image ID="Image3" ImageUrl="~/src/urun-foto.png" CssClass="mainPageProductImage" runat="server" />
+                            <asp:Button ID="Button3" CssClass="mainPageProductButton" runat="server" Text="Detay" />
+                        
+                        </asp:Panel>
+                    </asp:Panel>  
 
                 </asp:Panel>
                 <!-------------------------PRODUCTS END----------------------------------->
