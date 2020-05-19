@@ -1789,6 +1789,7 @@
     <Compile Include="pages\SayfaYapisi.Master.designer.cs">
       <DependentUpon>SayfaYapisi.Master</DependentUpon>
     </Compile>
+    <Compile Include="SqlClass.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fontawesome\less\brands.less" />
