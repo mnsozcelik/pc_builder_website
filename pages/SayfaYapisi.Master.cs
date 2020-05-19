@@ -5,9 +5,9 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-namespace pc_toplama_sistemi.pages
+namespace pc_toplama_sistemi
 {
-    public partial class PCBuilder : System.Web.UI.Page
+    public partial class SayfaYapisi : System.Web.UI.MasterPage
     {
         protected void Page_Load(object sender, EventArgs e)
         {

@@ -7,11 +7,11 @@
 // </otomatik üretildi>
 //------------------------------------------------------------------------------
 
-namespace pc_toplama_sistemi.pages
+namespace pc_toplama_sistemi
 {
 
 
-    public partial class aboutus
+    public partial class SayfaYapisi
     {
 
         /// <summary>
@@ -123,30 +123,12 @@ namespace pc_toplama_sistemi.pages
         protected global::System.Web.UI.WebControls.Panel page;
 
         /// <summary>
-        /// aboutUsSection denetimi.
+        /// ContentPlaceHolder1 denetimi.
         /// </summary>
         /// <remarks>
         /// Otomatik üretilmiş alan.
         /// Değiştirmek için, alan bildirimini tasarımcı dosyasından arka plan kod dosyasına taşıyın.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Panel aboutUsSection;
-
-        /// <summary>
-        /// aboutUsHead denetimi.
-        /// </summary>
-        /// <remarks>
-        /// Otomatik üretilmiş alan.
-        /// Değiştirmek için, alan bildirimini tasarımcı dosyasından arka plan kod dosyasına taşıyın.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label aboutUsHead;
-
-        /// <summary>
-        /// aboutUsText denetimi.
-        /// </summary>
-        /// <remarks>
-        /// Otomatik üretilmiş alan.
-        /// Değiştirmek için, alan bildirimini tasarımcı dosyasından arka plan kod dosyasına taşıyın.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label aboutUsText;
+        protected global::System.Web.UI.WebControls.ContentPlaceHolder ContentPlaceHolder1;
     }
 }

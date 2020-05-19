@@ -1,80 +1,12 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="products.aspx.cs" Inherits="pc_toplama_sistemi.pages.products" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/pages/SayfaYapisi.Master" AutoEventWireup="true" CodeBehind="Products.aspx.cs" Inherits="pc_toplama_sistemi.pages.Products" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
-<!DOCTYPE html>
-
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <title>Bilgisayar Topla-Ürünler</title>
-    <link rel="stylesheet" type="text/css" href="../Style.css" />
-    <link href="../fontawesome/css/all.css" rel="stylesheet" />
-</head>
-<body>
-    <form id="form1" runat="server">
-        <asp:Panel ID="header" runat="server">
-         <asp:ImageButton ID="headerLogo" ImageUrl="../src/logo.png" runat="server" />
-         <asp:TextBox ID="searchInput" runat="server" CssClass="searchInput"> ARA..</asp:TextBox>
-         
-         <div id="profile-menu">
-            <ul>
-                <li>
-                    <asp:HyperLink ID="profileButton" NavigateUrl="#" runat="server">
-                        <strong>|Kullanıcı Adı <i style="float:right;" class="fas fa-user-alt"></i></strong>
-                    </asp:HyperLink>
-                </li>
-                <ul>
-                    <li>
-                        <asp:HyperLink ID="cikisButton" NavigateUrl="#" runat="server">
-                            <strong>|Çıkış <i style="float:right;" class="fas fa-sign-out-alt"></i></strong>
-                        </asp:HyperLink>
-                    </li>
-                </ul>
-            </ul>
-         </div>
-        </asp:Panel>
-        <asp:Panel ID="body" runat="server">
-            <div id="sidebarMenu">
-                <div id="menu">
-                    <ul>
-                        <li>
-                            <asp:HyperLink ID="mainPageButton" NavigateUrl="../pages/default.aspx" runat="server">
-                                <strong><i class="fas fa-home"> </i> AnaSayfa</strong>
-                            </asp:HyperLink>
-
-                        </li>
-                        <li>
-                            <asp:HyperLink ID="productsPageButton" NavigateUrl="~/pages/products.aspx" runat="server">
-                                <strong><i class="fas fa-memory"> </i> Ürünler</strong>
-                            </asp:HyperLink>
-
-                        </li>
-                        <li>
-                            <asp:HyperLink ID="pcBuilderPageButton" NavigateUrl="~/pages/pcbuilder.aspx" runat="server">
-                                <strong><i class="fas fa-boxes"> </i> PC-Topla</strong>
-                            </asp:HyperLink>
-
-                        </li>
-                        <li>
-                            <asp:HyperLink ID="aboutUsPageButton" NavigateUrl="~/pages/aboutus.aspx" runat="server">
-                                <strong><i class="fas fa-info-circle"> </i> Hakkımızda</strong>
-                            </asp:HyperLink>
-
-                        </li>
-                        <li>
-                            <asp:HyperLink ID="contactPageButton" NavigateUrl="~/pages/contact.aspx" runat="server">
-                                <strong><i class="fas fa-id-badge"> </i> İletişim</strong>
-                            </asp:HyperLink>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <asp:Panel ID="page" runat="server">
-                <!-------------------------PRODUCTS----------------------------------->
+    <!-------------------------PRODUCTS----------------------------------->
                 <asp:Panel ID="productsPageProducts" CssClass="productsPageProducts" runat="server">
 
                     <asp:Panel ID="productsPageProductSection" CssClass="mainPageProductSection" runat="server">
                         <asp:Panel ID="productsPageProduct" CssClass="mainPageProduct" runat="server">
-                            <asp:Label ID="productsPageProductName" CssClass="mainPageProductName" runat="server" Text="Label"> ÜRÜN ADI</asp:Label>
+                            <asp:Label ID="productsPageProductName" CssClass="mainPageProductName" runat="server" Text="Label"> ÜRÜN ADI 1</asp:Label>
                             <asp:Image ID="productsPageProductImage" ImageUrl="~/src/urun-foto.png" CssClass="mainPageProductImage" runat="server" />
                             <asp:Button ID="productsPageProductButton" CssClass="mainPageProductButton" runat="server" Text="Detay" />
                         
@@ -82,7 +14,7 @@
                     </asp:Panel>
                     <asp:Panel ID="Panel1" CssClass="mainPageProductSection" runat="server">
                         <asp:Panel ID="Panel2" CssClass="mainPageProduct" runat="server">
-                            <asp:Label ID="Label1" CssClass="mainPageProductName" runat="server" Text="Label"> ÜRÜN ADI</asp:Label>
+                            <asp:Label ID="Label1" CssClass="mainPageProductName" runat="server" Text="Label"> ÜRÜN ADI 2</asp:Label>
                             <asp:Image ID="Image1" ImageUrl="~/src/urun-foto.png" CssClass="mainPageProductImage" runat="server" />
                             <asp:Button ID="Button1" CssClass="mainPageProductButton" runat="server" Text="Detay" />
                         
@@ -90,7 +22,7 @@
                     </asp:Panel>  
                     <asp:Panel ID="Panel3" CssClass="mainPageProductSection" runat="server">
                         <asp:Panel ID="Panel4" CssClass="mainPageProduct" runat="server">
-                            <asp:Label ID="Label2" CssClass="mainPageProductName" runat="server" Text="Label"> ÜRÜN ADI</asp:Label>
+                            <asp:Label ID="Label2" CssClass="mainPageProductName" runat="server" Text="Label"> ÜRÜN ADI 3</asp:Label>
                             <asp:Image ID="Image2" ImageUrl="~/src/urun-foto.png" CssClass="mainPageProductImage" runat="server" />
                             <asp:Button ID="Button2" CssClass="mainPageProductButton" runat="server" Text="Detay" />
                         
@@ -98,7 +30,7 @@
                     </asp:Panel>  
                     <asp:Panel ID="Panel5" CssClass="mainPageProductSection" runat="server">
                         <asp:Panel ID="Panel6" CssClass="mainPageProduct" runat="server">
-                            <asp:Label ID="Label3" CssClass="mainPageProductName" runat="server" Text="Label"> ÜRÜN ADI</asp:Label>
+                            <asp:Label ID="Label3" CssClass="mainPageProductName" runat="server" Text="Label"> ÜRÜN ADI 4</asp:Label>
                             <asp:Image ID="Image3" ImageUrl="~/src/urun-foto.png" CssClass="mainPageProductImage" runat="server" />
                             <asp:Button ID="Button3" CssClass="mainPageProductButton" runat="server" Text="Detay" />
                         
@@ -106,15 +38,6 @@
                     </asp:Panel>  
 
                 </asp:Panel>
-                <!-------------------------PRODUCTS END----------------------------------->
-                
-            </asp:Panel>
-            <div id="footer">
-                <h2 style="text-align:center; color:white; font-family:Arial;" >Designed by 
-                    <a target="_blank" href="https://www.enesozcelik.com">Mustafa Enes Özçelik</a>
-                </h2>
-            </div>
-        </asp:Panel>
-    </form>
-</body>
-</html>
+
+</asp:Content>
+

@@ -1726,11 +1726,11 @@
     <Content Include="fontawesome\webfonts\fa-regular-400.svg" />
     <Content Include="fontawesome\webfonts\fa-solid-900.svg" />
     <Content Include="Global.asax" />
-    <Content Include="pages\aboutus.aspx" />
-    <Content Include="pages\contact.aspx" />
-    <Content Include="pages\default.aspx" />
-    <Content Include="pages\pcbuilder.aspx" />
-    <Content Include="pages\products.aspx" />
+    <Content Include="pages\About.aspx" />
+    <Content Include="pages\Contact.aspx" />
+    <Content Include="pages\Default.aspx" />
+    <Content Include="pages\PCBuilder.aspx" />
+    <Content Include="pages\Products.aspx" />
     <Content Include="src\cpu.png" />
     <Content Include="src\gpu.png" />
     <Content Include="src\img_avatar.png" />
@@ -1746,42 +1746,49 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="pages\aboutus.aspx.cs">
-      <DependentUpon>aboutus.aspx</DependentUpon>
+    <Compile Include="pages\About.aspx.cs">
+      <DependentUpon>About.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="pages\aboutus.aspx.designer.cs">
-      <DependentUpon>aboutus.aspx</DependentUpon>
+    <Compile Include="pages\About.aspx.designer.cs">
+      <DependentUpon>About.aspx</DependentUpon>
     </Compile>
-    <Compile Include="pages\contact.aspx.cs">
-      <DependentUpon>contact.aspx</DependentUpon>
+    <Compile Include="pages\Contact.aspx.cs">
+      <DependentUpon>Contact.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="pages\contact.aspx.designer.cs">
-      <DependentUpon>contact.aspx</DependentUpon>
+    <Compile Include="pages\Contact.aspx.designer.cs">
+      <DependentUpon>Contact.aspx</DependentUpon>
     </Compile>
-    <Compile Include="pages\default.aspx.cs">
-      <DependentUpon>default.aspx</DependentUpon>
+    <Compile Include="pages\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="pages\default.aspx.designer.cs">
-      <DependentUpon>default.aspx</DependentUpon>
+    <Compile Include="pages\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
-    <Compile Include="pages\pcbuilder.aspx.cs">
-      <DependentUpon>pcbuilder.aspx</DependentUpon>
+    <Compile Include="pages\PCBuilder.aspx.cs">
+      <DependentUpon>PCBuilder.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="pages\pcbuilder.aspx.designer.cs">
-      <DependentUpon>pcbuilder.aspx</DependentUpon>
+    <Compile Include="pages\PCBuilder.aspx.designer.cs">
+      <DependentUpon>PCBuilder.aspx</DependentUpon>
     </Compile>
-    <Compile Include="pages\products.aspx.cs">
-      <DependentUpon>products.aspx</DependentUpon>
+    <Compile Include="pages\Products.aspx.cs">
+      <DependentUpon>Products.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="pages\products.aspx.designer.cs">
-      <DependentUpon>products.aspx</DependentUpon>
+    <Compile Include="pages\Products.aspx.designer.cs">
+      <DependentUpon>Products.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="pages\SayfaYapisi.Master.cs">
+      <DependentUpon>SayfaYapisi.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pages\SayfaYapisi.Master.designer.cs">
+      <DependentUpon>SayfaYapisi.Master</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Content Include="fontawesome\less\brands.less" />
@@ -1839,6 +1846,7 @@
     <Content Include="fontawesome\webfonts\fa-solid-900.woff" />
     <Content Include="fontawesome\webfonts\fa-solid-900.woff2" />
     <None Include="packages.config" />
+    <Content Include="pages\SayfaYapisi.Master" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
