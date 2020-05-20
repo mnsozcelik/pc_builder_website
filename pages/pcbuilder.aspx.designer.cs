@@ -33,13 +33,13 @@ namespace pc_toplama_sistemi.pages
         protected global::System.Web.UI.WebControls.Panel cpus;
 
         /// <summary>
-        /// cpustable denetimi.
+        /// cpusDataTable denetimi.
         /// </summary>
         /// <remarks>
         /// Otomatik üretilmiş alan.
         /// Değiştirmek için, alan bildirimini tasarımcı dosyasından arka plan kod dosyasına taşıyın.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RadioButtonList cpustable;
+        protected global::System.Web.UI.WebControls.DataList cpusDataTable;
 
         /// <summary>
         /// mainboardImg denetimi.

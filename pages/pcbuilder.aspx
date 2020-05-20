@@ -7,14 +7,15 @@
                     <div class="content">
                       <div class="inner-content">
                           <asp:Panel ID="cpus" CssClass="cpus" runat="server">
-                              <asp:RadioButtonList ID="cpustable" CssClass="productTable" runat="server" AutoPostBack="True">
-                                  <asp:ListItem>Item 1</asp:ListItem>
-                                  <asp:ListItem>Item 2</asp:ListItem>
-                                  <asp:ListItem>Item 3</asp:ListItem>
-                                  <asp:ListItem>Item 4</asp:ListItem>
-                                  <asp:ListItem>Item 5</asp:ListItem>
-                                  <asp:ListItem>Item 6</asp:ListItem>
-                              </asp:RadioButtonList>
+                             <asp:DataList ID="cpusDataTable" CssClass="productTable" runat="server">
+
+                                 <ItemTemplate>
+                                     <asp:RadioButtonList ID="RadioButtonList1" runat="server" DataSourceID="SqlDataSource1" DataTextField="ParcaMarka" DataValueField="ParcaMarka">
+                                     </asp:RadioButtonList>
+                                     <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:pcbuildConnectionString %>" SelectCommand="Select ParcaMarka from Tbl_Parcalar where Tbl_Parcalar.Kategoriid=1"></asp:SqlDataSource>
+                                 </ItemTemplate>
+
+                             </asp:DataList> 
                           </asp:Panel>
                       </div>
                     </div>
