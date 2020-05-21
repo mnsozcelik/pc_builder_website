@@ -7,10 +7,15 @@
                     <div class="content">
                       <div class="inner-content">
                           <asp:Panel ID="cpus" CssClass="cpus" runat="server">
-                            <asp:RadioButtonList ID="cpusTable" CssClass="productTable" runat="server" AutoPostBack="True" DataSourceID="pcbuild" DataTextField="parcaBilgisi" DataValueField="parcaBilgisi">
+                            <asp:RadioButtonList ID="cpusTable" CssClass="productTable" runat="server" AutoPostBack="True" DataSourceID="pcbuild" DataTextField="Ozellik" DataValueField="Ozellik">
 
                             </asp:RadioButtonList>
-                              <asp:SqlDataSource ID="pcbuild" runat="server" ConnectionString="<%$ ConnectionStrings:pcbuildConnectionString %>" SelectCommand="Select ParcaMarka +' '+ ParcaAd as &quot;parcaBilgisi&quot; from Tbl_Parcalar where Kategoriid=1 "></asp:SqlDataSource>
+                              <asp:SqlDataSource ID="pcbuild" runat="server" ConnectionString="<%$ ConnectionStrings:pcbuildConnectionString %>" SelectCommand="select
+	Tbl_Parcalar.Parcaid,
+	Tbl_Parcalar.ParcaMarka+' '+Tbl_Parcalar.ParcaAd+ ' ' + STRING_AGG(Ozellik,' ')  as &quot;Ozellik&quot;
+from Tbl_Parcalar,Tbl_Ozellik
+where Tbl_Parcalar.Kategoriid=1 and Tbl_Ozellik.Parcaid=Tbl_Parcalar.Parcaid 
+group by Tbl_Parcalar.Parcaid,Tbl_Parcalar.ParcaMarka,Tbl_Parcalar.ParcaAd"></asp:SqlDataSource>
                           </asp:Panel>
                       </div>
                     </div>
@@ -21,9 +26,14 @@
                     <div class="content">
                       <div class="inner-content">
                         <asp:Panel ID="mainboards" CssClass="mainboards" runat="server">
-                              <asp:RadioButtonList ID="mainboardTable" CssClass="productTable" runat="server" AutoPostBack="True" DataSourceID="mainboardDB" DataTextField="parcaBilgisi" DataValueField="parcaBilgisi">
+                              <asp:RadioButtonList ID="mainboardTable" CssClass="productTable" runat="server" AutoPostBack="True" DataSourceID="mainboardDB" DataTextField="Ozellik" DataValueField="Ozellik">
                               </asp:RadioButtonList>
-                              <asp:SqlDataSource ID="mainboardDB" runat="server" ConnectionString="<%$ ConnectionStrings:pcbuildConnectionString %>" SelectCommand="Select ParcaMarka +' '+ ParcaAd as &quot;parcaBilgisi&quot; from Tbl_Parcalar where Kategoriid=2 "></asp:SqlDataSource>
+                              <asp:SqlDataSource ID="mainboardDB" runat="server" ConnectionString="<%$ ConnectionStrings:pcbuildConnectionString %>" SelectCommand="select
+	Tbl_Parcalar.Parcaid,
+	Tbl_Parcalar.ParcaMarka+' '+Tbl_Parcalar.ParcaAd+ ' ' + STRING_AGG(Ozellik,' ')  as &quot;Ozellik&quot;
+from Tbl_Parcalar,Tbl_Ozellik
+where Tbl_Parcalar.Kategoriid=2 and Tbl_Ozellik.Parcaid=Tbl_Parcalar.Parcaid 
+group by Tbl_Parcalar.Parcaid,Tbl_Parcalar.ParcaMarka,Tbl_Parcalar.ParcaAd"></asp:SqlDataSource>
                           </asp:Panel>
                       </div>
                     </div>
@@ -35,8 +45,14 @@
                     <div class="content">
                       <div class="inner-content">
                         <asp:Panel ID="rams" CssClass="rams" runat="server">
-                              <asp:RadioButtonList ID="ramTable" CssClass="productTable" runat="server" AutoPostBack="True">
+                              <asp:RadioButtonList ID="ramTable" CssClass="productTable" runat="server" AutoPostBack="True" DataSourceID="ramDB" DataTextField="Ozellik" DataValueField="Ozellik">
                               </asp:RadioButtonList>
+                              <asp:SqlDataSource ID="ramDB" runat="server" ConnectionString="<%$ ConnectionStrings:pcbuildConnectionString %>" SelectCommand="select
+	Tbl_Parcalar.Parcaid,
+	Tbl_Parcalar.ParcaMarka+' '+Tbl_Parcalar.ParcaAd+ ' ' + STRING_AGG(Ozellik,' ')  as &quot;Ozellik&quot;
+from Tbl_Parcalar,Tbl_Ozellik
+where Tbl_Parcalar.Kategoriid=3 and Tbl_Ozellik.Parcaid=Tbl_Parcalar.Parcaid 
+group by Tbl_Parcalar.Parcaid,Tbl_Parcalar.ParcaMarka,Tbl_Parcalar.ParcaAd"></asp:SqlDataSource>
                           </asp:Panel>
                       </div>
                     </div>
@@ -48,14 +64,14 @@
                     <div class="content">
                       <div class="inner-content">
                         <asp:Panel ID="gpus" CssClass="gpus" runat="server">
-                              <asp:RadioButtonList ID="gpuTable" CssClass="productTable" runat="server" AutoPostBack="True">
-                                  <asp:ListItem>Item 1</asp:ListItem>
-                                  <asp:ListItem>Item 2</asp:ListItem>
-                                  <asp:ListItem>Item 3</asp:ListItem>
-                                  <asp:ListItem>Item 4</asp:ListItem>
-                                  <asp:ListItem>Item 5</asp:ListItem>
-                                  <asp:ListItem>Item 6</asp:ListItem>
+                              <asp:RadioButtonList ID="gpuTable" CssClass="productTable" runat="server" AutoPostBack="True" DataSourceID="gpuDB" DataTextField="Ozellik" DataValueField="Ozellik">
                               </asp:RadioButtonList>
+                              <asp:SqlDataSource ID="gpuDB" runat="server" ConnectionString="<%$ ConnectionStrings:pcbuildConnectionString %>" SelectCommand="select
+	Tbl_Parcalar.Parcaid,
+	Tbl_Parcalar.ParcaMarka+' '+Tbl_Parcalar.ParcaAd+ ' ' + STRING_AGG(Ozellik,' ')  as &quot;Ozellik&quot;
+from Tbl_Parcalar,Tbl_Ozellik
+where Tbl_Parcalar.Kategoriid=4 and Tbl_Ozellik.Parcaid=Tbl_Parcalar.Parcaid 
+group by Tbl_Parcalar.Parcaid,Tbl_Parcalar.ParcaMarka,Tbl_Parcalar.ParcaAd"></asp:SqlDataSource>
                         </asp:Panel>
                       </div>
                     </div>
@@ -67,14 +83,15 @@
                     <div class="content">
                       <div class="inner-content">
                         <asp:Panel ID="powersups" CssClass="powersups" runat="server">
-                              <asp:RadioButtonList ID="powersupTable" CssClass="productTable" runat="server" AutoPostBack="True">
-                                  <asp:ListItem>Item 1</asp:ListItem>
-                                  <asp:ListItem>Item 2</asp:ListItem>
-                                  <asp:ListItem>Item 3</asp:ListItem>
-                                  <asp:ListItem>Item 4</asp:ListItem>
-                                  <asp:ListItem>Item 5</asp:ListItem>
-                                  <asp:ListItem>Item 6</asp:ListItem>
+                              <asp:RadioButtonList ID="powersupTable" CssClass="productTable" runat="server" AutoPostBack="True" DataSourceID="psuDB" DataTextField="Ozellik" DataValueField="Ozellik">
+
                               </asp:RadioButtonList>
+                              <asp:SqlDataSource ID="psuDB" runat="server" ConnectionString="<%$ ConnectionStrings:pcbuildConnectionString %>" SelectCommand="select
+	Tbl_Parcalar.Parcaid,
+	Tbl_Parcalar.ParcaMarka+' '+Tbl_Parcalar.ParcaAd+ ' ' + STRING_AGG(Ozellik,',')  as &quot;Ozellik&quot;
+from Tbl_Parcalar,Tbl_Ozellik
+where Tbl_Parcalar.Kategoriid=5 and Tbl_Ozellik.Parcaid=Tbl_Parcalar.Parcaid 
+group by Tbl_Parcalar.Parcaid,Tbl_Parcalar.ParcaMarka,Tbl_Parcalar.ParcaAd"></asp:SqlDataSource>
                         </asp:Panel>
                       </div>
                     </div>
@@ -86,14 +103,14 @@
                     <div class="content">
                       <div class="inner-content">
                         <asp:Panel ID="discs" CssClass="discs" runat="server">
-                              <asp:RadioButtonList ID="discTable" CssClass="productTable" runat="server" AutoPostBack="True">
-                                  <asp:ListItem>Item 1</asp:ListItem>
-                                  <asp:ListItem>Item 2</asp:ListItem>
-                                  <asp:ListItem>Item 3</asp:ListItem>
-                                  <asp:ListItem>Item 4</asp:ListItem>
-                                  <asp:ListItem>Item 5</asp:ListItem>
-                                  <asp:ListItem>Item 6</asp:ListItem>
+                              <asp:RadioButtonList ID="discTable" CssClass="productTable" runat="server" AutoPostBack="True" DataSourceID="discDB" DataTextField="Ozellik" DataValueField="Ozellik">
                               </asp:RadioButtonList>
+                              <asp:SqlDataSource ID="discDB" runat="server" ConnectionString="<%$ ConnectionStrings:pcbuildConnectionString %>" SelectCommand="select
+	Tbl_Parcalar.Parcaid,
+	Tbl_Parcalar.ParcaMarka+' '+Tbl_Parcalar.ParcaAd+ ' ' + STRING_AGG(Ozellik,' ')  as &quot;Ozellik&quot;
+from Tbl_Parcalar,Tbl_Ozellik
+where Tbl_Parcalar.Kategoriid=6 and Tbl_Ozellik.Parcaid=Tbl_Parcalar.Parcaid 
+group by Tbl_Parcalar.Parcaid,Tbl_Parcalar.ParcaMarka,Tbl_Parcalar.ParcaAd"></asp:SqlDataSource>
                         </asp:Panel>
                       </div>
                     </div>

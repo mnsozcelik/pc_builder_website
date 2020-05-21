@@ -170,6 +170,8 @@
     width:100%;
     height:500px;
 }
+
+
 .mainPageProducts{
     margin:40px 10px 10px 10px;
     position:relative;
@@ -180,12 +182,12 @@
 }
 .mainPageProductSection {
     float: left;
-    width: 45%;
+    width: 100%;
     margin: 20px 20px 20px 20px;
     border-color:rgba(0, 40, 58, 1);
     background-color: transparent;
-    height: 400px;
-    
+    height: auto;
+    border-color:transparent;
 }
 
 .mainPageProduct {
@@ -203,8 +205,14 @@
     background-color: transparent;
     height: auto;
 }
+.mainPageProductBrand {
+    position: relative;
+}
 .mainPageProductName {
     position: relative;
+    height:auto;
+    font-size:19px;
+    font-weight:100;
 }
 
 .mainPageProduct:hover{
@@ -214,9 +222,9 @@
 }
 
 .mainPageProductImage {
-    width: 100%;
-    max-width:475px;
-    height:auto;
+    width: 50%;
+    max-width:100%;
+    height:50%;
     position:relative;
 
 }
@@ -241,24 +249,129 @@
     border-color:rgba(0, 130, 189, 1);
 }
 
-
-.productsPageProducts {
-    max-width: 1100px;
-    width: 100%;
+.mainPageDataList>tbody>tr>td{
+    width:550px;
+    height:auto;
+    display:block;
+}
+.mainPageDataList>tbody>tr{
+    float:left;
+}
+.mainPageDataList > tbody {
     position:relative;
-    margin: auto;
 }
-.productsPageProductSection{
-    width:40%;
-    height:200px;
 
+.mainPageProductCategory {
+    float: left;
+    background-color: rgb(224, 118, 16);
+    color: white;
+    padding: 10px;
 }
-.productsPageProduct{
-    width:100%;
+
+
+.productPageProducts {
+    margin: 40px 10px 10px 10px;
+    position: relative;
+    bottom: 45px;
+    left: 65px;
+    width: 88%;
+    height: auto;
 }
-.productsPageProductName{
-    font-family:Arial;
+
+.productPageProductSection {
+    float: left;
+    width: 100%;
+    margin: 20px 20px 20px 20px;
+    border-color: rgba(0, 40, 58, 1);
+    background-color: transparent;
+    height: auto;
+    border-color: transparent;
 }
+
+.productPageProduct {
+    transition-duration: 500ms;
+    text-align: center;
+    font-family: Arial;
+    font-weight: bold;
+    font-size: 25px;
+    float: left;
+    border: solid;
+    border-radius: 4px;
+    width: 100%;
+    border-color: rgba(0, 40, 58, 1);
+    border-width: 1px;
+    background-color: transparent;
+    height: auto;
+    min-height:350px;
+}
+
+.productPageProductBrand {
+    position: relative;
+}
+
+.productPageProductName {
+    position: relative;
+    height: auto;
+    font-size: 19px;
+    font-weight: 100;
+}
+
+.productPageProduct:hover {
+    transition-duration: 500ms;
+    border-radius: 12px;
+    box-shadow: 0px 7px 34px -1px rgba(0,0,0,0.55);
+}
+
+.productPageProductImage {
+    width: 50%;
+    max-width: 100%;
+    height: 50%;
+    position: relative;
+}
+
+.productPageProductButton {
+    float: right;
+    width: 20%;
+    border-radius: 35px;
+    border-style: solid;
+    border-color: white;
+    height: 50px;
+    font-size: 18px;
+    color: white;
+    margin: 15px;
+    font-family: Arial;
+    font-weight: bold;
+    background-color: rgba(0, 130, 189, 1);
+}
+
+.productPageProductButton:hover {
+    transition-duration: 250ms;
+    border-color: rgba(0, 130, 189, 1);
+}
+
+.productPageDataList > tbody > tr > td {
+    width: 350px;
+    height: auto;
+    display: block;
+}
+
+.productPageDataList > tbody > tr {
+    float: left;
+}
+
+.productPageDataList > tbody {
+    position: relative;
+}
+
+.productPageProductCategory {
+    float: left;
+    background-color: rgb(224, 118, 16);
+    color: white;
+    padding: 10px;
+}
+
+
+
 
 
 
@@ -334,8 +447,9 @@
 
 .productTable {
     min-height:75px;
+    width:100%;
     border: medium solid transparent;
-    }
+}
 .productTable input{
     transform: scale(2);
     float:left;

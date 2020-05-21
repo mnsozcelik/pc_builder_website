@@ -114,6 +114,15 @@ namespace pc_toplama_sistemi.pages
         protected global::System.Web.UI.WebControls.RadioButtonList ramTable;
 
         /// <summary>
+        /// ramDB denetimi.
+        /// </summary>
+        /// <remarks>
+        /// Otomatik üretilmiş alan.
+        /// Değiştirmek için, alan bildirimini tasarımcı dosyasından arka plan kod dosyasına taşıyın.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.SqlDataSource ramDB;
+
+        /// <summary>
         /// gpuImg denetimi.
         /// </summary>
         /// <remarks>
@@ -139,6 +148,15 @@ namespace pc_toplama_sistemi.pages
         /// Değiştirmek için, alan bildirimini tasarımcı dosyasından arka plan kod dosyasına taşıyın.
         /// </remarks>
         protected global::System.Web.UI.WebControls.RadioButtonList gpuTable;
+
+        /// <summary>
+        /// gpuDB denetimi.
+        /// </summary>
+        /// <remarks>
+        /// Otomatik üretilmiş alan.
+        /// Değiştirmek için, alan bildirimini tasarımcı dosyasından arka plan kod dosyasına taşıyın.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.SqlDataSource gpuDB;
 
         /// <summary>
         /// powersupImg denetimi.
@@ -168,6 +186,15 @@ namespace pc_toplama_sistemi.pages
         protected global::System.Web.UI.WebControls.RadioButtonList powersupTable;
 
         /// <summary>
+        /// psuDB denetimi.
+        /// </summary>
+        /// <remarks>
+        /// Otomatik üretilmiş alan.
+        /// Değiştirmek için, alan bildirimini tasarımcı dosyasından arka plan kod dosyasına taşıyın.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.SqlDataSource psuDB;
+
+        /// <summary>
         /// discImg denetimi.
         /// </summary>
         /// <remarks>
@@ -193,6 +220,15 @@ namespace pc_toplama_sistemi.pages
         /// Değiştirmek için, alan bildirimini tasarımcı dosyasından arka plan kod dosyasına taşıyın.
         /// </remarks>
         protected global::System.Web.UI.WebControls.RadioButtonList discTable;
+
+        /// <summary>
+        /// discDB denetimi.
+        /// </summary>
+        /// <remarks>
+        /// Otomatik üretilmiş alan.
+        /// Değiştirmek için, alan bildirimini tasarımcı dosyasından arka plan kod dosyasına taşıyın.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.SqlDataSource discDB;
 
         /// <summary>
         /// sepetPanel denetimi.
