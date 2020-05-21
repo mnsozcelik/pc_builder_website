@@ -33,13 +33,22 @@ namespace pc_toplama_sistemi.pages
         protected global::System.Web.UI.WebControls.Panel cpus;
 
         /// <summary>
-        /// cpusDataTable denetimi.
+        /// cpusTable denetimi.
         /// </summary>
         /// <remarks>
         /// Otomatik üretilmiş alan.
         /// Değiştirmek için, alan bildirimini tasarımcı dosyasından arka plan kod dosyasına taşıyın.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DataList cpusDataTable;
+        protected global::System.Web.UI.WebControls.RadioButtonList cpusTable;
+
+        /// <summary>
+        /// pcbuild denetimi.
+        /// </summary>
+        /// <remarks>
+        /// Otomatik üretilmiş alan.
+        /// Değiştirmek için, alan bildirimini tasarımcı dosyasından arka plan kod dosyasına taşıyın.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.SqlDataSource pcbuild;
 
         /// <summary>
         /// mainboardImg denetimi.
@@ -67,6 +76,15 @@ namespace pc_toplama_sistemi.pages
         /// Değiştirmek için, alan bildirimini tasarımcı dosyasından arka plan kod dosyasına taşıyın.
         /// </remarks>
         protected global::System.Web.UI.WebControls.RadioButtonList mainboardTable;
+
+        /// <summary>
+        /// mainboardDB denetimi.
+        /// </summary>
+        /// <remarks>
+        /// Otomatik üretilmiş alan.
+        /// Değiştirmek için, alan bildirimini tasarımcı dosyasından arka plan kod dosyasına taşıyın.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.SqlDataSource mainboardDB;
 
         /// <summary>
         /// ramImg denetimi.

@@ -7,15 +7,10 @@
                     <div class="content">
                       <div class="inner-content">
                           <asp:Panel ID="cpus" CssClass="cpus" runat="server">
-                             <asp:DataList ID="cpusDataTable" CssClass="productTable" runat="server">
+                            <asp:RadioButtonList ID="cpusTable" CssClass="productTable" runat="server" AutoPostBack="True" DataSourceID="pcbuild" DataTextField="parcaBilgisi" DataValueField="parcaBilgisi">
 
-                                 <ItemTemplate>
-                                     <asp:RadioButtonList ID="RadioButtonList1" runat="server" DataSourceID="SqlDataSource1" DataTextField="ParcaMarka" DataValueField="ParcaMarka">
-                                     </asp:RadioButtonList>
-                                     <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:pcbuildConnectionString %>" SelectCommand="Select ParcaMarka from Tbl_Parcalar where Tbl_Parcalar.Kategoriid=1"></asp:SqlDataSource>
-                                 </ItemTemplate>
-
-                             </asp:DataList> 
+                            </asp:RadioButtonList>
+                              <asp:SqlDataSource ID="pcbuild" runat="server" ConnectionString="<%$ ConnectionStrings:pcbuildConnectionString %>" SelectCommand="Select ParcaMarka +' '+ ParcaAd as &quot;parcaBilgisi&quot; from Tbl_Parcalar where Kategoriid=1 "></asp:SqlDataSource>
                           </asp:Panel>
                       </div>
                     </div>
@@ -26,14 +21,9 @@
                     <div class="content">
                       <div class="inner-content">
                         <asp:Panel ID="mainboards" CssClass="mainboards" runat="server">
-                              <asp:RadioButtonList ID="mainboardTable" CssClass="productTable" runat="server" AutoPostBack="True">
-                                  <asp:ListItem>Item 1</asp:ListItem>
-                                  <asp:ListItem>Item 2</asp:ListItem>
-                                  <asp:ListItem>Item 3</asp:ListItem>
-                                  <asp:ListItem>Item 4</asp:ListItem>
-                                  <asp:ListItem>Item 5</asp:ListItem>
-                                  <asp:ListItem>Item 6</asp:ListItem>
+                              <asp:RadioButtonList ID="mainboardTable" CssClass="productTable" runat="server" AutoPostBack="True" DataSourceID="mainboardDB" DataTextField="parcaBilgisi" DataValueField="parcaBilgisi">
                               </asp:RadioButtonList>
+                              <asp:SqlDataSource ID="mainboardDB" runat="server" ConnectionString="<%$ ConnectionStrings:pcbuildConnectionString %>" SelectCommand="Select ParcaMarka +' '+ ParcaAd as &quot;parcaBilgisi&quot; from Tbl_Parcalar where Kategoriid=2 "></asp:SqlDataSource>
                           </asp:Panel>
                       </div>
                     </div>
@@ -46,12 +36,6 @@
                       <div class="inner-content">
                         <asp:Panel ID="rams" CssClass="rams" runat="server">
                               <asp:RadioButtonList ID="ramTable" CssClass="productTable" runat="server" AutoPostBack="True">
-                                  <asp:ListItem>Item 1</asp:ListItem>
-                                  <asp:ListItem>Item 2</asp:ListItem>
-                                  <asp:ListItem>Item 3</asp:ListItem>
-                                  <asp:ListItem>Item 4</asp:ListItem>
-                                  <asp:ListItem>Item 5</asp:ListItem>
-                                  <asp:ListItem>Item 6</asp:ListItem>
                               </asp:RadioButtonList>
                           </asp:Panel>
                       </div>
