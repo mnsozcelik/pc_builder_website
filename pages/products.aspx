@@ -3,6 +3,7 @@
 
     <asp:Panel ID="productsPageProducts" CssClass="productsPageProducts" runat="server">
         <asp:Panel ID="categoryContainer" CssClass="categoryContainer" runat="server">
+            
             <asp:Button ID="categoryAll" OnClick="categoryAll_Click" CssClass="category_item" runat="server" Text="HEPSİ"/>
             <asp:Button ID="categoryCpu" OnClick="categoryCpu_Click" CssClass="category_item" runat="server" Text="İŞLEMCİ"/>
             <asp:Button ID="categoryMainboard" OnClick="categoryMainboard_Click" CssClass="category_item" runat="server" Text="ANAKART"/>

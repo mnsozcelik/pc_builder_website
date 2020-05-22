@@ -12,64 +12,40 @@ namespace pc_toplama_sistemi.pages
     {
         SqlClass cnnclss = new SqlClass();
         protected void Page_Load(object sender, EventArgs e)
-        {
-            SqlCommand command = new SqlCommand("Select * From Tbl_Parcalar,Tbl_Kategoriler where Tbl_Kategoriler.Kategoriid=Tbl_Parcalar.Kategoriid", cnnclss.Connection());
-            SqlDataReader read = command.ExecuteReader();
-            productPageDataList.DataSource = read;
-            productPageDataList.DataBind();
-        }
+        { allCommand(); }
 
         protected void categoryAll_Click(object sender, EventArgs e)
-        {
-            SqlCommand command = new SqlCommand("Select * From Tbl_Parcalar,Tbl_Kategoriler where Tbl_Kategoriler.Kategoriid=Tbl_Parcalar.Kategoriid", cnnclss.Connection());
-            SqlDataReader read = command.ExecuteReader();
-            productPageDataList.DataSource = read;
-            productPageDataList.DataBind();
-        }
+        { allCommand(); }
 
         protected void categoryCpu_Click(object sender, EventArgs e)
-        {
-            SqlCommand command = new SqlCommand("Select * From Tbl_Parcalar,Tbl_Kategoriler where Tbl_Parcalar.Kategoriid=1 and Tbl_Kategoriler.Kategoriid=Tbl_Parcalar.Kategoriid", cnnclss.Connection());
-            SqlDataReader read = command.ExecuteReader();
-            productPageDataList.DataSource = read;
-            productPageDataList.DataBind();
-        }
+        { catCommand(1); }
 
         protected void categoryMainboard_Click(object sender, EventArgs e)
-        {
-            SqlCommand command = new SqlCommand("Select * From Tbl_Parcalar,Tbl_Kategoriler where Tbl_Parcalar.Kategoriid=2 and Tbl_Kategoriler.Kategoriid=Tbl_Parcalar.Kategoriid", cnnclss.Connection());
-            SqlDataReader read = command.ExecuteReader();
-            productPageDataList.DataSource = read;
-            productPageDataList.DataBind();
-        }
+        { catCommand(2); }
 
         protected void categoryRam_Click(object sender, EventArgs e)
-        {
-            SqlCommand command = new SqlCommand("Select * From Tbl_Parcalar,Tbl_Kategoriler where Tbl_Parcalar.Kategoriid=3 and Tbl_Kategoriler.Kategoriid=Tbl_Parcalar.Kategoriid", cnnclss.Connection());
-            SqlDataReader read = command.ExecuteReader();
-            productPageDataList.DataSource = read;
-            productPageDataList.DataBind();
-        }
+        { catCommand(3); }
 
         protected void categoryGpu_Click(object sender, EventArgs e)
-        {
-            SqlCommand command = new SqlCommand("Select * From Tbl_Parcalar,Tbl_Kategoriler where Tbl_Parcalar.Kategoriid=4 and Tbl_Kategoriler.Kategoriid=Tbl_Parcalar.Kategoriid", cnnclss.Connection());
-            SqlDataReader read = command.ExecuteReader();
-            productPageDataList.DataSource = read;
-            productPageDataList.DataBind();
-        }
+        { catCommand(4); }
 
         protected void categorypsu_Click(object sender, EventArgs e)
+        { catCommand(5); }
+
+        protected void categorydisc_Click(object sender, EventArgs e)
+        { catCommand(6); }
+
+        public void catCommand (int a)
         {
-            SqlCommand command = new SqlCommand("Select * From Tbl_Parcalar,Tbl_Kategoriler where Tbl_Parcalar.Kategoriid=5 and Tbl_Kategoriler.Kategoriid=Tbl_Parcalar.Kategoriid", cnnclss.Connection());
+            SqlCommand command = new SqlCommand("Select * From Tbl_Parcalar,Tbl_Kategoriler where Tbl_Parcalar.Kategoriid=" + a + " and Tbl_Kategoriler.Kategoriid=Tbl_Parcalar.Kategoriid", cnnclss.Connection());
             SqlDataReader read = command.ExecuteReader();
             productPageDataList.DataSource = read;
             productPageDataList.DataBind();
         }
 
-        protected void categorydisc_Click(object sender, EventArgs e)
+        public void allCommand()
         {
-            SqlCommand command = new SqlCommand("Select * From Tbl_Parcalar,Tbl_Kategoriler where Tbl_Parcalar.Kategoriid=6 and Tbl_Kategoriler.Kategoriid=Tbl_Parcalar.Kategoriid", cnnclss.Connection());
+            SqlCommand command = new SqlCommand("Select * From Tbl_Parcalar,Tbl_Kategoriler where Tbl_Kategoriler.Kategoriid=Tbl_Parcalar.Kategoriid", cnnclss.Connection());
             SqlDataReader read = command.ExecuteReader();
             productPageDataList.DataSource = read;
             productPageDataList.DataBind();

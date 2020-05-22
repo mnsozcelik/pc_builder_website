@@ -552,27 +552,33 @@
     height: 25px;
 }
 
-.categoryContainer{
-    width:100%;
-    display:block;
-    margin:0 auto;
-    overflow:hidden;
+.categoryContainer {
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+    overflow: hidden;
+    border: solid;
+    border-color: rgba(0, 130, 189, 1);
+    border-left: none;
+    border-right: none;
 }
 
 .category_item {
-    float:left;
-    width:14%;
+    float: left;
+    width: 14.2859%;
+
     background-color: white;
     padding: 20px 0;
-    border:none;
+    border: none;
     text-align: center;
-    cursor:pointer;
-    font-family:Arial;
-    font-size:15px;
-    font-weight:bold;
-    color:rgba(0, 130, 189, 1);
+    cursor: pointer;
+    font-family: Arial;
+    font-size: 15px;
+    font-weight: bold;
+    color: rgba(0, 130, 189, 1);
 }
 .category_item:hover{
+    transition-duration: 250ms;
     background-color:rgba(0, 130, 189, 1);
     color:white;
 }
