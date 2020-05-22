@@ -75,6 +75,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="accordionStyle.css" />
+    <Content Include="category.js" />
     <Content Include="components\images\Kişiye Özel Toplanan Sistemler-tn.jpg" />
     <Content Include="components\images\Kişiye Özel Toplanan Sistemler.jpg" />
     <Content Include="components\images\MSI Oyun Ekipmanları-tn.jpg" />

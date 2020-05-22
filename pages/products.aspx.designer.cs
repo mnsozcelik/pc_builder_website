@@ -24,85 +24,76 @@ namespace pc_toplama_sistemi.pages
         protected global::System.Web.UI.WebControls.Panel productsPageProducts;
 
         /// <summary>
-        /// Panel1 denetimi.
+        /// categoryContainer denetimi.
         /// </summary>
         /// <remarks>
         /// Otomatik üretilmiş alan.
         /// Değiştirmek için, alan bildirimini tasarımcı dosyasından arka plan kod dosyasına taşıyın.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Panel Panel1;
+        protected global::System.Web.UI.WebControls.Panel categoryContainer;
 
         /// <summary>
-        /// Panel2 denetimi.
+        /// categoryAll denetimi.
         /// </summary>
         /// <remarks>
         /// Otomatik üretilmiş alan.
         /// Değiştirmek için, alan bildirimini tasarımcı dosyasından arka plan kod dosyasına taşıyın.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Panel Panel2;
+        protected global::System.Web.UI.WebControls.Button categoryAll;
 
         /// <summary>
-        /// Label1 denetimi.
+        /// categoryCpu denetimi.
         /// </summary>
         /// <remarks>
         /// Otomatik üretilmiş alan.
         /// Değiştirmek için, alan bildirimini tasarımcı dosyasından arka plan kod dosyasına taşıyın.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label1;
+        protected global::System.Web.UI.WebControls.Button categoryCpu;
 
         /// <summary>
-        /// categorycpuRB denetimi.
+        /// categoryMainboard denetimi.
         /// </summary>
         /// <remarks>
         /// Otomatik üretilmiş alan.
         /// Değiştirmek için, alan bildirimini tasarımcı dosyasından arka plan kod dosyasına taşıyın.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RadioButton categorycpuRB;
+        protected global::System.Web.UI.WebControls.Button categoryMainboard;
 
         /// <summary>
-        /// categorymainboardRB denetimi.
+        /// categoryRam denetimi.
         /// </summary>
         /// <remarks>
         /// Otomatik üretilmiş alan.
         /// Değiştirmek için, alan bildirimini tasarımcı dosyasından arka plan kod dosyasına taşıyın.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RadioButton categorymainboardRB;
+        protected global::System.Web.UI.WebControls.Button categoryRam;
 
         /// <summary>
-        /// categoryramRB denetimi.
+        /// categoryGpu denetimi.
         /// </summary>
         /// <remarks>
         /// Otomatik üretilmiş alan.
         /// Değiştirmek için, alan bildirimini tasarımcı dosyasından arka plan kod dosyasına taşıyın.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RadioButton categoryramRB;
+        protected global::System.Web.UI.WebControls.Button categoryGpu;
 
         /// <summary>
-        /// categorygpuRB denetimi.
+        /// categorypsu denetimi.
         /// </summary>
         /// <remarks>
         /// Otomatik üretilmiş alan.
         /// Değiştirmek için, alan bildirimini tasarımcı dosyasından arka plan kod dosyasına taşıyın.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RadioButton categorygpuRB;
+        protected global::System.Web.UI.WebControls.Button categorypsu;
 
         /// <summary>
-        /// categorypsuRB denetimi.
+        /// categorydisc denetimi.
         /// </summary>
         /// <remarks>
         /// Otomatik üretilmiş alan.
         /// Değiştirmek için, alan bildirimini tasarımcı dosyasından arka plan kod dosyasına taşıyın.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RadioButton categorypsuRB;
-
-        /// <summary>
-        /// categorydiscRB denetimi.
-        /// </summary>
-        /// <remarks>
-        /// Otomatik üretilmiş alan.
-        /// Değiştirmek için, alan bildirimini tasarımcı dosyasından arka plan kod dosyasına taşıyın.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.RadioButton categorydiscRB;
+        protected global::System.Web.UI.WebControls.Button categorydisc;
 
         /// <summary>
         /// products denetimi.

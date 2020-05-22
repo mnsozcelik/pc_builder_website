@@ -419,6 +419,7 @@
 }
 .contactMessageTB{
     height:400px;
+    width:70%;
     
 }
 .contactButton {
@@ -535,5 +536,43 @@
     color:aliceblue;
 }
 
+.response {
+    transition-duration: 550ms;
+    position: absolute;
+    right: 35px;
+    bottom: 0px;
+    background-color: darkgreen;
+    color: white;
+    font-weight: bold;
+    font-family: arial;
+    font-size: 18px;
+    padding: 15px;
+    border-radius: 20px 20px 0px 0px;
+    width: auto;
+    height: 25px;
+}
 
+.categoryContainer{
+    width:100%;
+    display:block;
+    margin:0 auto;
+    overflow:hidden;
+}
 
+.category_item {
+    float:left;
+    width:14%;
+    background-color: white;
+    padding: 20px 0;
+    border:none;
+    text-align: center;
+    cursor:pointer;
+    font-family:Arial;
+    font-size:15px;
+    font-weight:bold;
+    color:rgba(0, 130, 189, 1);
+}
+.category_item:hover{
+    background-color:rgba(0, 130, 189, 1);
+    color:white;
+}
