@@ -1,4 +1,4 @@
-﻿    <%@ Page Title="" Language="C#" MasterPageFile="~/pages/SayfaYapisi.Master" AutoEventWireup="true" CodeBehind="Products.aspx.cs" Inherits="pc_toplama_sistemi.pages.Products" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/pages/SayfaYapisi.Master" AutoEventWireup="true" CodeBehind="Products.aspx.cs" Inherits="pc_toplama_sistemi.pages.Products" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
     <asp:Panel ID="productsPageProducts" CssClass="productsPageProducts" runat="server">

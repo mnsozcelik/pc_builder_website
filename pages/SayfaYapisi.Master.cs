@@ -11,7 +11,18 @@ namespace pc_toplama_sistemi
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            if(Session["User"] != null)
+            {
+                username.Text = "|"+Session["User"].ToString();
+                logoutBTN.CssClass = "logoutBTN";
+                logoutBTN.Text = "X";
+            }
+        }
 
+        protected void logoutBTN_Click(object sender, EventArgs e)
+        {
+            Session.Remove("User");
+            Response.Redirect("~/pages/Default.aspx");
         }
     }
 }

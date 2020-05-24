@@ -23,17 +23,11 @@
          <div id="profile-menu">
             <ul>
                 <li>
-                    <asp:HyperLink ID="profileButton" NavigateUrl="#" runat="server">
-                        <strong>|Kullanıcı Adı <i style="float:right;" class="fas fa-user-alt"></i></strong>
+                    <asp:HyperLink ID="profileButton" NavigateUrl="~/pages/Login.aspx" runat="server">
+                        <asp:Label ID="username" CssClass="username" runat="server">|Giriş <i class="fas fa-user-alt"></i></asp:Label>
+                        <asp:Button ID="logoutBTN" CssClass="templogout" OnClick="logoutBTN_Click" runat="server" Text="" />
                     </asp:HyperLink>
                 </li>
-                <ul>
-                    <li>
-                        <asp:HyperLink ID="cikisButton" NavigateUrl="#" runat="server">
-                            <strong>|Çıkış <i style="float:right;" class="fas fa-sign-out-alt"></i></strong>
-                        </asp:HyperLink>
-                    </li>
-                </ul>
             </ul>
          </div>
         </asp:Panel>
@@ -78,7 +72,7 @@
                     </h2>
                 </div>
             </div>
-        <asp:Panel ID="page" runat="server">
+        <asp:Panel ID="page" CssClass="page" runat="server">
             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
             </asp:ContentPlaceHolder>
         </asp:Panel>

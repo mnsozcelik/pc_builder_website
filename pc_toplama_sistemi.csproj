@@ -75,6 +75,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="accordionStyle.css" />
+    <Content Include="AdminDefault.aspx" />
     <Content Include="category.js" />
     <Content Include="components\images\Kişiye Özel Toplanan Sistemler-tn.jpg" />
     <Content Include="components\images\Kişiye Özel Toplanan Sistemler.jpg" />
@@ -1737,10 +1738,13 @@
     <Content Include="pages\About.aspx" />
     <Content Include="pages\Contact.aspx" />
     <Content Include="pages\Default.aspx" />
+    <Content Include="pages\Login.aspx" />
     <Content Include="pages\PCBuilder.aspx" />
     <Content Include="pages\Products.aspx" />
+    <Content Include="pages\SignUp.aspx" />
     <Content Include="src\cpu.png" />
     <Content Include="src\gpu.png" />
+    <Content Include="src\hdd.mp4" />
     <Content Include="src\img_avatar.png" />
     <Content Include="src\logo.png" />
     <Content Include="src\mainboard.png" />
@@ -1751,6 +1755,20 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AdminDefault.aspx.cs">
+      <DependentUpon>AdminDefault.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminDefault.aspx.designer.cs">
+      <DependentUpon>AdminDefault.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pages\AdminSayfaYapisi.Master.cs">
+      <DependentUpon>AdminSayfaYapisi.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pages\AdminSayfaYapisi.Master.designer.cs">
+      <DependentUpon>AdminSayfaYapisi.Master</DependentUpon>
+    </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -1775,6 +1793,13 @@
     <Compile Include="pages\Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
+    <Compile Include="pages\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pages\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
     <Compile Include="pages\PCBuilder.aspx.cs">
       <DependentUpon>PCBuilder.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -1788,6 +1813,13 @@
     </Compile>
     <Compile Include="pages\Products.aspx.designer.cs">
       <DependentUpon>Products.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pages\SignUp.aspx.cs">
+      <DependentUpon>SignUp.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pages\SignUp.aspx.designer.cs">
+      <DependentUpon>SignUp.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="pages\SayfaYapisi.Master.cs">
@@ -1854,6 +1886,7 @@
     <Content Include="fontawesome\webfonts\fa-solid-900.ttf" />
     <Content Include="fontawesome\webfonts\fa-solid-900.woff" />
     <Content Include="fontawesome\webfonts\fa-solid-900.woff2" />
+    <Content Include="pages\AdminSayfaYapisi.Master" />
     <None Include="packages.config" />
     <Content Include="pages\SayfaYapisi.Master" />
     <None Include="Web.Debug.config">

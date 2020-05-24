@@ -1,0 +1,88 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="AdminSayfaYapisi.master.cs" Inherits="pc_toplama_sistemi.AdminSayfaYapisi" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Bilgisayar Topla</title>
+    <link rel="stylesheet" type="text/css" href="../Style.css" />
+    <link rel="stylesheet" type="text/css" href="../accordionStyle.css" />
+
+    <link href="../fontawesome/css/all.css" rel="stylesheet" />
+    <script src="../components/sliderengine/jquery.js"></script>
+    <script src="../components/sliderengine/amazingslider.js"></script>
+    <link rel="stylesheet" type="text/css" href="../components/sliderengine/amazingslider-1.css"/>
+    <script src="../components/sliderengine/initslider-1.js"></script>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <asp:Panel ID="header" runat="server">
+         <asp:ImageButton ID="headerLogo" ImageUrl="../src/logo.png" runat="server" />
+         
+         <div id="profile-menu">
+            <ul>
+                <li>
+                    <asp:HyperLink ID="profileButton" NavigateUrl="#" runat="server">
+                        <strong>|Kullanıcı Adı <i style="float:right;" class="fas fa-user-alt"></i></strong>
+                    </asp:HyperLink>
+                </li>
+                <ul>
+                    <li>
+                        <asp:HyperLink ID="cikisButton" NavigateUrl="#" runat="server">
+                            <strong>|Çıkış <i style="float:right;" class="fas fa-sign-out-alt"></i></strong>
+                        </asp:HyperLink>
+                    </li>
+                </ul>
+            </ul>
+         </div>
+        </asp:Panel>
+        <asp:Panel ID="body" runat="server">
+            <div id="sidebarMenu">
+                <div id="menu">
+                    <ul>
+                        <li>
+                            <asp:HyperLink ID="mainPageButton" NavigateUrl="../pages/Default.aspx" runat="server">
+                                <strong><i class="fas fa-home"> </i> AnaSayfa</strong>
+                            </asp:HyperLink>
+
+                        </li>
+                        <li>
+                            <asp:HyperLink ID="productsPageButton" NavigateUrl="~/pages/Products.aspx" runat="server">
+                                <strong><i class="fas fa-memory"> </i> Ürünler</strong>
+                            </asp:HyperLink>
+
+                        </li>
+                        <li>
+                            <asp:HyperLink ID="pcBuilderPageButton" NavigateUrl="~/pages/PCBuilder.aspx" runat="server">
+                                <strong><i class="fas fa-boxes"> </i> PC-Topla</strong>
+                            </asp:HyperLink>
+
+                        </li>
+                        <li>
+                            <asp:HyperLink ID="aboutUsPageButton" NavigateUrl="~/pages/About.aspx" runat="server">
+                                <strong><i class="fas fa-info-circle"> </i> Hakkımızda</strong>
+                            </asp:HyperLink>
+
+                        </li>
+                        <li>
+                            <asp:HyperLink ID="contactPageButton" NavigateUrl="~/pages/Contact.aspx" runat="server">
+                                <strong><i class="fas fa-id-badge"> </i> İletişim</strong>
+                            </asp:HyperLink>
+                        </li>
+                    </ul>
+                </div>
+                <div id="footer">
+                    <h2>Designed by <br />
+                        <a target="_blank" href="https://www.enesozcelik.com">Mustafa Enes Özçelik</a>
+                    </h2>
+                </div>
+            </div>
+        <asp:Panel ID="AdminPage" CssClass="page" runat="server">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </asp:Panel>
+        </asp:Panel>
+    </form>
+</body>
+</html>
