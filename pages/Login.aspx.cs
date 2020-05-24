@@ -15,7 +15,19 @@ namespace pc_toplama_sistemi.pages
         {
             if (Session["User"] != null)
             {
-                Response.Redirect("~/pages/Default.aspx");
+                SqlCommand command = new SqlCommand("select isAdmin from Tbl_Kullanicilar where KullaniciAdi= '" + Session["User"] + "'", cnnclss.Connection());
+                String output = command.ExecuteScalar().ToString();
+                if(output == "True")
+                {
+                    cnnclss.Connection().Close();
+                    Response.Redirect("~/pages/AdminDefault.aspx");
+                }
+                else
+                {
+                    cnnclss.Connection().Close();
+                    Response.Redirect("~/pages/Default.aspx");
+                }
+                
             }
         }
 
@@ -24,14 +36,23 @@ namespace pc_toplama_sistemi.pages
             try
             {
                 SqlCommand command = new SqlCommand("select count(*) from Tbl_Kullanicilar where KullaniciAdi='" + usernameLogin.Text + "' and Sifre='" + passwordLogin.Text + "'", cnnclss.Connection());
-                command.ExecuteNonQuery();
+                cnnclss.Connection().Close();
                 String output = command.ExecuteScalar().ToString();
-
+                Session["User"] = usernameLogin.Text;
                 if (output == "1")
                 {
-                    cnnclss.Connection().Close();
-                    Session["User"] = usernameLogin.Text;
-                    Response.Redirect("~/pages/Default.aspx");
+                    SqlCommand commandAdmin = new SqlCommand("select isAdmin from Tbl_Kullanicilar where KullaniciAdi= '" + usernameLogin.Text + "'", cnnclss.Connection());
+                    String outputAdmin = commandAdmin.ExecuteScalar().ToString();
+                    if (outputAdmin == "True")
+                    {
+                        cnnclss.Connection().Close();
+                        Response.Redirect("~/pages/AdminDefault.aspx");
+                    }
+                    else
+                    {
+                        cnnclss.Connection().Close();
+                        Response.Redirect("~/pages/Default.aspx");
+                    }
                 }
                 else
                 {

@@ -23,7 +23,7 @@
     <form id="form1" runat="server">
         
         <asp:Panel ID="login" CssClass="login" runat="server">
-            <asp:Image ID="loginLogo" CssClass="loginLogo" ImageUrl="~/src/logo.png" runat="server" />
+            <a href="Default.aspx"><asp:Image ID="loginLogo" CssClass="loginLogo" ImageUrl="~/src/logo.png" runat="server" /></a>
             <br />
             
             <asp:Label ID="Label1" CssClass="loginLBL" runat="server" Text="GİRİŞ"></asp:Label>

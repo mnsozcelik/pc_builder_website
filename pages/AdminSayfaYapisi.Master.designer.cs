@@ -42,22 +42,31 @@ namespace pc_toplama_sistemi
         protected global::System.Web.UI.WebControls.ImageButton headerLogo;
 
         /// <summary>
-        /// profileButton denetimi.
+        /// AdminprofileButton denetimi.
         /// </summary>
         /// <remarks>
         /// Otomatik üretilmiş alan.
         /// Değiştirmek için, alan bildirimini tasarımcı dosyasından arka plan kod dosyasına taşıyın.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.HyperLink profileButton;
+        protected global::System.Web.UI.WebControls.HyperLink AdminprofileButton;
 
         /// <summary>
-        /// cikisButton denetimi.
+        /// Adminusername denetimi.
         /// </summary>
         /// <remarks>
         /// Otomatik üretilmiş alan.
         /// Değiştirmek için, alan bildirimini tasarımcı dosyasından arka plan kod dosyasına taşıyın.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.HyperLink cikisButton;
+        protected global::System.Web.UI.WebControls.Label Adminusername;
+
+        /// <summary>
+        /// AdminLogoutBTN denetimi.
+        /// </summary>
+        /// <remarks>
+        /// Otomatik üretilmiş alan.
+        /// Değiştirmek için, alan bildirimini tasarımcı dosyasından arka plan kod dosyasına taşıyın.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button AdminLogoutBTN;
 
         /// <summary>
         /// body denetimi.

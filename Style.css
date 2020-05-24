@@ -204,6 +204,8 @@
     border-width: 1px;
     background-color: transparent;
     height: auto;
+    min-height:350px;
+
 }
 .mainPageProductBrand {
     position: relative;
@@ -250,7 +252,7 @@
 }
 
 .mainPageDataList>tbody>tr>td{
-    width:550px;
+    width:300px;
     height:auto;
     display:block;
 }
@@ -350,7 +352,7 @@
 }
 
 .productPageDataList > tbody > tr > td {
-    width: 350px;
+    width: 300px;
     height: auto;
     display: block;
 }
@@ -764,7 +766,7 @@
     top:21px;
     font-size:22px;
     margin:auto;
-
+    left:-50px;
 }
 
 .templogout{

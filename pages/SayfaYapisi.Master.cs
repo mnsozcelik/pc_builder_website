@@ -4,17 +4,22 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using System.Data.SqlClient;
 
 namespace pc_toplama_sistemi
 {
     public partial class SayfaYapisi : System.Web.UI.MasterPage
     {
+        SqlClass cnnclss = new SqlClass();
         protected void Page_Load(object sender, EventArgs e)
         {
-            if(Session["User"] != null)
+
+            if (Session["User"] != null)
             {
-                username.Text = "|"+Session["User"].ToString();
+                cnnclss.Connection().Close();
+                username.Text = "|" + Session["User"].ToString();
                 logoutBTN.CssClass = "logoutBTN";
+
             }
         }
 

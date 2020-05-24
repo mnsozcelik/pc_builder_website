@@ -23,17 +23,11 @@
          <div id="profile-menu">
             <ul>
                 <li>
-                    <asp:HyperLink ID="profileButton" NavigateUrl="#" runat="server">
-                        <strong>|Kullanıcı Adı <i style="float:right;" class="fas fa-user-alt"></i></strong>
+                    <asp:HyperLink ID="AdminprofileButton" NavigateUrl="~/pages/Login.aspx" runat="server">
+                        <asp:Label ID="Adminusername" CssClass="username" runat="server">|Giriş <i class="fas fa-user-alt"></i></asp:Label>
+                        <asp:Button ID="AdminLogoutBTN" CssClass="templogout" OnClick="AdminLogoutBTN_Click" runat="server" Text="X" />
                     </asp:HyperLink>
                 </li>
-                <ul>
-                    <li>
-                        <asp:HyperLink ID="cikisButton" NavigateUrl="#" runat="server">
-                            <strong>|Çıkış <i style="float:right;" class="fas fa-sign-out-alt"></i></strong>
-                        </asp:HyperLink>
-                    </li>
-                </ul>
             </ul>
          </div>
         </asp:Panel>
@@ -73,7 +67,8 @@
                     </ul>
                 </div>
                 <div id="footer">
-                    <h2>Designed by <br />
+                    <h2>Designed by 
+                        <br />
                         <a target="_blank" href="https://www.enesozcelik.com">Mustafa Enes Özçelik</a>
                     </h2>
                 </div>

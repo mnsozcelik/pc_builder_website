@@ -1736,6 +1736,7 @@
     <Content Include="fontawesome\webfonts\fa-solid-900.svg" />
     <Content Include="Global.asax" />
     <Content Include="pages\About.aspx" />
+    <Content Include="pages\AdminDefault.aspx" />
     <Content Include="pages\Contact.aspx" />
     <Content Include="pages\Default.aspx" />
     <Content Include="pages\Login.aspx" />
@@ -1760,6 +1761,13 @@
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="AdminDefault.aspx.designer.cs">
+      <DependentUpon>AdminDefault.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pages\AdminDefault.aspx.cs">
+      <DependentUpon>AdminDefault.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pages\AdminDefault.aspx.designer.cs">
       <DependentUpon>AdminDefault.aspx</DependentUpon>
     </Compile>
     <Compile Include="pages\AdminSayfaYapisi.Master.cs">

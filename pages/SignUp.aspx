@@ -23,12 +23,12 @@
     <form id="form1" runat="server">
         
         <asp:Panel ID="login" CssClass="login" runat="server">
-            <asp:Image ID="loginLogo" CssClass="loginLogo" ImageUrl="~/src/logo.png" runat="server" />
+            <a href="Default.aspx"> <asp:Image ID="loginLogo" CssClass="loginLogo" ImageUrl="~/src/logo.png" runat="server" /></a>
             <br />
             
             <asp:Label ID="Label1" CssClass="signUpLBL" runat="server" Text="KAYIT OL"></asp:Label>
             <br />
-            <asp:TextBox ID="signUpName" CssClass="signUpTB" placeholder="Adı-Soyadınız" runat="server"></asp:TextBox>
+            <asp:TextBox ID="signUpName" CssClass="signUpTB" placeholder="Adı Soyadı" runat="server"></asp:TextBox>
             <br />
             <asp:TextBox ID="signUpUsername" CssClass="signUpTB" placeholder="Kullanıcı Adı" runat="server" TextMode="SingleLine"></asp:TextBox>
             <br />
