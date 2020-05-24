@@ -15,7 +15,6 @@ namespace pc_toplama_sistemi
             {
                 username.Text = "|"+Session["User"].ToString();
                 logoutBTN.CssClass = "logoutBTN";
-                logoutBTN.Text = "X";
             }
         }
 
