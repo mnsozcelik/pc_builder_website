@@ -13,7 +13,10 @@ namespace pc_toplama_sistemi.pages
         SqlClass cnnclss = new SqlClass();
         protected void Page_Load(object sender, EventArgs e)
         {
-            getAllUsers();
+            
+            
+                getAllUsers();
+            
         }
         protected void userSearchButton_Click(object sender, EventArgs e)
         {
@@ -56,11 +59,27 @@ namespace pc_toplama_sistemi.pages
         }
         public void updateUser()
         {
+            string userid = TextBox5.Text;
+            SqlCommand command = new SqlCommand("update Tbl_Kullanicilar set Adi=@p1, KullaniciAdi=@p2, Sifre=@p3, isAdmin=@p4, EPosta=@p5 where Kullaniciid=@p6",cnnclss.Connection());
+            command.Parameters.AddWithValue("@p1", HiddenField1.Value);
+            command.Parameters.AddWithValue("@p2", HiddenField2.Value);
+            command.Parameters.AddWithValue("@p3", HiddenField3.Value);
+            command.Parameters.AddWithValue("@p4", HiddenField4.Value);
+            command.Parameters.AddWithValue("@p5", HiddenField5.Value);
+            command.Parameters.AddWithValue("@p6", userid);
+            command.ExecuteNonQuery();
+            cnnclss.Connection().Close();
+            getAllUsers();
 
         }
         public void deleteUser()
         {
-
+            string userid = TextBox5.Text;
+            SqlCommand command = new SqlCommand("delete from Tbl_Kullanicilar where Kullaniciid=@p1", cnnclss.Connection());
+            command.Parameters.AddWithValue("@p1", userid);
+            command.ExecuteNonQuery();
+            cnnclss.Connection().Close();
+            getAllUsers();
         }
     }
 }

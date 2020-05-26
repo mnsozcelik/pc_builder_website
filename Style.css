@@ -819,20 +819,17 @@ body {
     max-height:440px;
 }
 .usersPanel {
-    box-shadow: 0px 0px 13px 1px rgba(0,0,0,0.75);
     height: 100%;
     width: 60%;
     position: relative;
     left: 0px;
     float: left;
-    border: solid;
-    border-color: transparent;
-    border-radius: 10px;
-    background-color: silver;
     overflow-y: auto;
 }
 .userRow{
-
+    border-radius:10px;
+    background-color:rgba(0, 130, 189, 1);
+    color:white;
     float:left;
     width:100%;
     height:auto;
@@ -883,43 +880,57 @@ body {
 
 
 .usersEditPanel {
-    box-shadow: 0px 0px 13px 1px rgba(0,0,0,0.75);
     height: 100%;
     width: 38%;
     float: right;
     position: relative;
     right: 0px;
-    border: solid;
-    border-color: transparent;
-    border-radius: 10px;
-    background-color: silver;
 }
 .editLabel{
     float:left;
     height:25px;
     font-weight:bold;
 }
-.editTB{
-    width:70%;
-    height:25px;
-    float:right;
+.editTB {
+    font-weight: bold;
+    border: solid;
+    border-width: 1px;
+    border-radius: 4px;
+    margin: 1px;
+    width: 70%;
+    height: 25px;
+    float: right;
 }
 .editTBB {
-    width: 40%;
+    font-weight: bold;
+    border: solid;
+    border-width: 1px;
+    border-radius:4px;
+    width: 45%;
     height: 25px;
     float: right;
 }
 .editTBBBTN {
+    font-size:18px;
     width: 30%;
     height: 30px;
     float: right;
     font-weight:bold;
+    border:solid;
+    border-color:transparent;
+    border-radius:4px;
 }
 .editTBBBTN:active{
     background-color: rgba(0, 40, 58, 1);
     color: white;
 }
-.buttonActive{
+.editTBBBTN:hover{
+    transition-duration:200ms;
+    background-color: white;
+    color: rgba(0, 40, 58, 1);
+    cursor:pointer;
+}
+.buttonActive {
     background-color: rgba(0, 40, 58, 1);
     color: white;
 }
@@ -963,7 +974,187 @@ body {
 }
 /*ADMİN KULLANICILAR(DEFAULT) SAYFASI SON*/
 
+
+
 /*ADMİN ÜRÜNLER SAYFASI*/
+.productsGeneralPanel{
+    
+    height:480px;
+    display:block;
+    padding: 5px;
+    max-height:500px;
+}
+.productsPanel {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    left: 0px;
+    float: left;
+    overflow-y: auto;
+    float:left;
+}
+.productsDataList > tbody > tr{
+    float:left;
+    width:33.3%;
+    height:205px;
+}
+.productsDataList > tbody > tr > td {
+    min-height:250px;
+    width:100%;
+}
+.productPanel {
+
+    text-align:center;
+    align-items:center;
+    background-color:darkgray;
+    height: 200px;
+    width: 350px;
+    border-radius:15px;
+}
+.productPanel:hover {
+    transition-duration:200ms;
+    box-shadow: 0px 0px 9px 0px rgba(0,0,0,0.75);
+}
+.productButton {
+    position: relative;
+    right: -115px;
+    bottom: -40px;
+    background-color:crimson;
+    color:white;
+    font-size:18px;
+    font-weight:bold;
+    width:50px;
+    height:50px;
+    border-color:transparent;
+    border-radius:15px;
+}
+.productButton:hover{
+    transition-duration:200ms;
+    background-color:white;
+    color:crimson;
+    cursor:pointer;
+}
+.productID {
+    position:relative;
+    right:-145px;
+    color:white;
+    top:8px;
+    font-weight:bold;
+    font-size:22px;
+
+}
+.productBrand {
+    position: relative;
+    color: white;
+    font-weight: bold;
+    font-size: 22px;
+}
+.productName {
+    position: relative;
+    color: rgba(0, 40, 58, 1);
+    font-weight: bold;
+    font-size: 18px;
+}
+.productsDataList {
+
+}
+
+
+
+
+.usersEditPanel {
+    height: 100%;
+    width: 38%;
+    float: right;
+    position: relative;
+    right: 0px;
+}
+.editLabel{
+    float:left;
+    height:25px;
+    font-weight:bold;
+}
+.editTB {
+    font-weight: bold;
+    border: solid;
+    border-width: 1px;
+    border-radius: 4px;
+    margin: 1px;
+    width: 70%;
+    height: 25px;
+    float: right;
+}
+.editTBB {
+    font-weight: bold;
+    border: solid;
+    border-width: 1px;
+    border-radius:4px;
+    width: 45%;
+    height: 25px;
+    float: right;
+}
+.editTBBBTN {
+    font-size:18px;
+    width: 30%;
+    height: 30px;
+    float: right;
+    font-weight:bold;
+    border:solid;
+    border-color:transparent;
+    border-radius:4px;
+}
+.editTBBBTN:active{
+    background-color: rgba(0, 40, 58, 1);
+    color: white;
+}
+.editTBBBTN:hover{
+    transition-duration:200ms;
+    background-color: white;
+    color: rgba(0, 40, 58, 1);
+    cursor:pointer;
+}
+.buttonActive {
+    background-color: rgba(0, 40, 58, 1);
+    color: white;
+}
+.editCB {
+    width: 70%;
+}
+.editCB input{
+    transform:scale(1.7);
+}
+.userSaveBTN{
+    border-radius:10px;
+    border:none;
+    height:50px;
+    width:200px;
+    background-color:darkgreen;
+    font-size:20px;
+    font-weight:bold;
+    color:white;
+    cursor:pointer;
+}
+.userSaveBTN:hover{
+    transition-duration:200ms;
+    background-color:white;
+    color:darkgreen;
+}
+.userDeleteBTN {
+    border-radius: 10px;
+    border: none;
+    height: 50px;
+    width: 200px;
+    background-color: rgb(255, 0, 0);
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+}
+.userDeleteBTN:hover {
+    transition-duration: 200ms;
+    background-color: white;
+    color: rgb(255, 0, 0);
+}
 
 /*ADMİN ÜRÜNLER SAYFASI SON*/
 
