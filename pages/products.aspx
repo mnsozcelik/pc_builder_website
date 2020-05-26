@@ -10,7 +10,7 @@
             <asp:Button ID="categoryRam" OnClick="categoryRam_Click" CssClass="category_item" runat="server" Text="RAM"/>
             <asp:Button ID="categoryGpu" OnClick="categoryGpu_Click" CssClass="category_item" runat="server" Text="EKRAN KARTI"/>
             <asp:Button ID="categorypsu" OnClick="categorypsu_Click" CssClass="category_item" runat="server" Text="GÜÇ KAYNAĞI"/>
-            <asp:Button ID="categorydisc" OnClick="categorydisc_Click" CssClass="category_item" runat="server" Text="DEPOLAMA ARAÇLARI"/>
+            <asp:Button ID="categorydisc" OnClick="categorydisc_Click" CssClass="category_item" runat="server" Text="DEPOLAMA"/>
         </asp:Panel>
             <!-------------------------PRODUCTS----------------------------------->
         <asp:Panel ID="products" CssClass="productPageProducts" runat="server">

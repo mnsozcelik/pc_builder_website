@@ -1737,6 +1737,10 @@
     <Content Include="Global.asax" />
     <Content Include="pages\About.aspx" />
     <Content Include="pages\AdminDefault.aspx" />
+    <Content Include="pages\AdminMessages.aspx" />
+    <Content Include="pages\AdminOrders.aspx" />
+    <Content Include="pages\AdminProducts.aspx" />
+    <Content Include="pages\AdminSiteInfo.aspx" />
     <Content Include="pages\Contact.aspx" />
     <Content Include="pages\Default.aspx" />
     <Content Include="pages\Login.aspx" />
@@ -1770,6 +1774,27 @@
     <Compile Include="pages\AdminDefault.aspx.designer.cs">
       <DependentUpon>AdminDefault.aspx</DependentUpon>
     </Compile>
+    <Compile Include="pages\AdminMessages.aspx.cs">
+      <DependentUpon>AdminMessages.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pages\AdminMessages.aspx.designer.cs">
+      <DependentUpon>AdminMessages.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pages\AdminOrders.aspx.cs">
+      <DependentUpon>AdminOrders.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pages\AdminOrders.aspx.designer.cs">
+      <DependentUpon>AdminOrders.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pages\AdminProducts.aspx.cs">
+      <DependentUpon>AdminProducts.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pages\AdminProducts.aspx.designer.cs">
+      <DependentUpon>AdminProducts.aspx</DependentUpon>
+    </Compile>
     <Compile Include="pages\AdminSayfaYapisi.Master.cs">
       <DependentUpon>AdminSayfaYapisi.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -1786,6 +1811,13 @@
     </Compile>
     <Compile Include="pages\About.aspx.designer.cs">
       <DependentUpon>About.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pages\AdminSiteInfo.aspx.cs">
+      <DependentUpon>AdminSiteInfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pages\AdminSiteInfo.aspx.designer.cs">
+      <DependentUpon>AdminSiteInfo.aspx</DependentUpon>
     </Compile>
     <Compile Include="pages\Contact.aspx.cs">
       <DependentUpon>Contact.aspx</DependentUpon>

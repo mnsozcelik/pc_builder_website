@@ -1,4 +1,4 @@
-﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="AdminSayfaYapisi.master.cs" Inherits="pc_toplama_sistemi.AdminSayfaYapisi" %>
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="AdminSayfaYapisi.master.cs" Inherits="pc_toplama_sistemi.AdminSayfaYapisi" EnableViewState="False" %>
 
 <!DOCTYPE html>
 
@@ -18,50 +18,50 @@
 <body>
     <form id="form1" runat="server">
         <asp:Panel ID="header" runat="server">
-         <asp:ImageButton ID="headerLogo" ImageUrl="../src/logo.png" runat="server" />
-         
-         <div id="profile-menu">
-            <ul>
-                <li>
-                    <asp:HyperLink ID="AdminprofileButton" NavigateUrl="~/pages/Login.aspx" runat="server">
-                        <asp:Label ID="Adminusername" CssClass="username" runat="server">|Giriş <i class="fas fa-user-alt"></i></asp:Label>
-                        <asp:Button ID="AdminLogoutBTN" CssClass="templogout" OnClick="AdminLogoutBTN_Click" runat="server" Text="X" />
-                    </asp:HyperLink>
-                </li>
-            </ul>
-         </div>
+            <asp:Label ID="Label1" CssClass="adminPaneliYazisi" runat="server">ADMİN PANELİ<i class="fas fa-user-lock"></i></asp:Label>
+            
+            <div id="profile-menu">
+               <ul>
+                   <li>
+                       <asp:HyperLink ID="AdminprofileButton" NavigateUrl="~/pages/Login.aspx" runat="server">
+                           <asp:Label ID="Adminusername" CssClass="username" runat="server">|Giriş <i class="fas fa-user-alt"></i></asp:Label>
+                           <asp:Button ID="AdminLogoutBTN" CssClass="templogout" OnClick="AdminLogoutBTN_Click" runat="server" Text="X" />
+                       </asp:HyperLink>
+                   </li>
+               </ul>
+            </div>
         </asp:Panel>
         <asp:Panel ID="body" runat="server">
             <div id="sidebarMenu">
                 <div id="menu">
                     <ul>
                         <li>
-                            <asp:HyperLink ID="mainPageButton" NavigateUrl="../pages/Default.aspx" runat="server">
-                                <strong><i class="fas fa-home"> </i> AnaSayfa</strong>
+                            <asp:HyperLink ID="mainPageButton" NavigateUrl="../pages/AdminDefault.aspx" runat="server">
+                                <strong><i class="fas fa-users"> </i> Kullanıcılar</strong>
                             </asp:HyperLink>
 
                         </li>
                         <li>
-                            <asp:HyperLink ID="productsPageButton" NavigateUrl="~/pages/Products.aspx" runat="server">
+                            <asp:HyperLink ID="productsPageButton" NavigateUrl="~/pages/AdminProducts.aspx" runat="server">
                                 <strong><i class="fas fa-memory"> </i> Ürünler</strong>
                             </asp:HyperLink>
 
                         </li>
                         <li>
-                            <asp:HyperLink ID="pcBuilderPageButton" NavigateUrl="~/pages/PCBuilder.aspx" runat="server">
-                                <strong><i class="fas fa-boxes"> </i> PC-Topla</strong>
+                            <asp:HyperLink ID="pcBuilderPageButton" NavigateUrl="~/pages/AdminOrders.aspx" runat="server">
+                                <strong><i class="fas fa-truck-loading"> </i> Siparişler</strong>
                             </asp:HyperLink>
 
                         </li>
                         <li>
-                            <asp:HyperLink ID="aboutUsPageButton" NavigateUrl="~/pages/About.aspx" runat="server">
-                                <strong><i class="fas fa-info-circle"> </i> Hakkımızda</strong>
+                            <asp:HyperLink ID="aboutUsPageButton" NavigateUrl="~/pages/AdminMessages.aspx" runat="server">
+                                <strong><i class="fas fa-inbox"> </i> Kullanıcı Mesajları</strong>
                             </asp:HyperLink>
 
                         </li>
                         <li>
-                            <asp:HyperLink ID="contactPageButton" NavigateUrl="~/pages/Contact.aspx" runat="server">
-                                <strong><i class="fas fa-id-badge"> </i> İletişim</strong>
+                            <asp:HyperLink ID="contactPageButton" NavigateUrl="~/pages/AdminSiteInfo.aspx" runat="server">
+                                <strong><i class="fas fa-info-circle"> </i> Site Hakkında</strong>
                             </asp:HyperLink>
                         </li>
                     </ul>

@@ -171,7 +171,7 @@
     height:500px;
 }
 
-
+/*ANA SAYFA ÜRÜNLERİ*/
 .mainPageProducts{
     margin:40px 10px 10px 10px;
     position:relative;
@@ -269,6 +269,40 @@
     color: white;
     padding: 10px;
 }
+/*ANA SAYFA ÜRÜNLERİ SON*/
+
+/*ÜRÜNLER SAYFASI ÜRÜNLERİ*/
+
+.categoryContainer {
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+    overflow: hidden;
+    border: solid;
+    border-color: rgba(0, 130, 189, 1);
+    border-left: none;
+    border-right: none;
+}
+
+.category_item {
+    float: left;
+    width: 14.2859%;
+    background-color: white;
+    padding: 20px 0;
+    border: none;
+    text-align: center;
+    cursor: pointer;
+    font-family: Arial;
+    font-size: 15px;
+    font-weight: bold;
+    color: rgba(0, 130, 189, 1);
+}
+
+    .category_item:hover {
+        transition-duration: 250ms;
+        background-color: rgba(0, 130, 189, 1);
+        color: white;
+    }
 
 
 .productPageProducts {
@@ -371,12 +405,10 @@
     color: white;
     padding: 10px;
 }
+/*ÜRÜNLER SAYFASI ÜRÜNLERİ SON*/
 
 
-
-
-
-
+/*HAKKIMIZDA SAYFASI*/
 .aboutUsSection {
     text-align: center;
     margin: 0 25px 0 25px;
@@ -390,8 +422,9 @@
     font-size:22px;
     font-weight:bold;
 }
+/*HAKKIMIZDA SAYFASI SON*/
 
-
+/*İLETİŞİM SAYFASI*/
 .contactSection {
     padding-top: 25px;
     width: 860px;
@@ -442,12 +475,12 @@
     transition-duration:250ms;
     border-color:rgba(0, 130, 189, 1);
 }
+/*İLETİŞİM SAYFASI SON*/
 
 
 
 
-
-
+/*PC BUİLD SAYFASI*/
 .productTable {
     min-height:75px;
     width:100%;
@@ -495,8 +528,6 @@
     max-height: 250px;
 }
 
-
-
 .sepetPanel {
     box-shadow: 0px 7px 34px -1px rgba(0,0,0,0.55);
     border-radius: 10px;
@@ -523,6 +554,7 @@
     margin:auto;
 }
 .sepetProCB{
+    cursor:pointer;
     height:25px;
     width:25px;
     border:solid;
@@ -537,6 +569,7 @@
     font-weight:bold;
     color:aliceblue;
 }
+/*PC BUİLD SAYFASI SON*/
 
 .response {
     transition-duration: 550ms;
@@ -554,40 +587,7 @@
     height: 25px;
 }
 
-.categoryContainer {
-    width: 100%;
-    display: block;
-    margin: 0 auto;
-    overflow: hidden;
-    border: solid;
-    border-color: rgba(0, 130, 189, 1);
-    border-left: none;
-    border-right: none;
-}
-
-.category_item {
-    float: left;
-    width: 14.2859%;
-
-    background-color: white;
-    padding: 20px 0;
-    border: none;
-    text-align: center;
-    cursor: pointer;
-    font-family: Arial;
-    font-size: 15px;
-    font-weight: bold;
-    color: rgba(0, 130, 189, 1);
-}
-.category_item:hover{
-    transition-duration: 250ms;
-    background-color:rgba(0, 130, 189, 1);
-    color:white;
-}
-
-
-
-
+/*LOGIN VE SIGNUP SAYFASI */
 .login {
     position: fixed;
     top: 75px;
@@ -777,10 +777,202 @@
     position: absolute;
     border: none;
     font-weight: bold;
-    background-color: rgb(255, 0, 0);
+    background-color:rgba(0, 130, 189, 1);
     color: white;
     width: 25%;
     font-size: 30px;
     height: 100%;
     right: 0px;
+    cursor:pointer;
 }
+.logoutBTN:hover{
+    background-color:rgb(255, 0, 0);
+}
+.adminPaneliYazisi{
+    background-color:rgba(0, 130, 189, 1);
+    position:absolute;
+    width:20%;
+    text-align:center;
+    color:white;
+    display:block;
+    font-weight:bold;
+    font-size:28px;
+    height:75px;
+    margin-top:-37.5px;
+    top:50%;
+    vertical-align:middle;
+}
+/*LOGIN VE SIGNUP SAYFASI SON*/
+
+.adminSayfaBasligi {
+    font-size:22px;
+}
+
+
+/*ADMİN KULLANICILAR(DEFAULT) SAYFASI*/
+.usersGeneralPanel{
+    height:440px;
+    display:block;
+    padding: 5px;
+    max-height:440px;
+}
+.usersPanel {
+    box-shadow: 0px 0px 13px 1px rgba(0,0,0,0.75);
+    height: 100%;
+    width: 60%;
+    position: relative;
+    left: 0px;
+    float: left;
+    border: solid;
+    border-color: transparent;
+    border-radius: 10px;
+    background-color: silver;
+    overflow-y: auto;
+}
+.userRow{
+
+    float:left;
+    width:100%;
+    height:auto;
+    border-bottom:solid;
+    border-top:solid;
+    border-color:white;
+    border-width:1px;
+}
+.userButton {
+    height: 100%;
+    width: 20%;
+    font-size: 15px;
+    font-weight: bold;
+    float: left;
+    border: solid;
+    border-color: transparent;
+    color:white;
+    background-color: rgba(0, 40, 58, 1);
+    cursor: pointer;
+}
+.userButton:hover{
+    transition-duration:200ms;
+    background-color:white;
+    color: rgba(0, 40, 58, 1);
+}
+.userID {
+    height: 100%;
+    width: 20%;
+    font-size: 18px;
+    float:left;
+}
+.userName {
+    height: 100%;
+    width: 30%;
+    font-size: 18px;
+    float:left;
+}
+.userSaveDate {
+    height: 100%;
+    width: 30%;
+    float: left;
+    font-size: 18px;
+}
+.usersDataList{
+    width:100%;
+}
+
+
+
+.usersEditPanel {
+    box-shadow: 0px 0px 13px 1px rgba(0,0,0,0.75);
+    height: 100%;
+    width: 38%;
+    float: right;
+    position: relative;
+    right: 0px;
+    border: solid;
+    border-color: transparent;
+    border-radius: 10px;
+    background-color: silver;
+}
+.editLabel{
+    float:left;
+    height:25px;
+    font-weight:bold;
+}
+.editTB{
+    width:70%;
+    height:25px;
+    float:right;
+}
+.editTBB {
+    width: 40%;
+    height: 25px;
+    float: right;
+}
+.editTBBBTN {
+    width: 30%;
+    height: 30px;
+    float: right;
+    font-weight:bold;
+}
+.editTBBBTN:active{
+    background-color: rgba(0, 40, 58, 1);
+    color: white;
+}
+.buttonActive{
+    background-color: rgba(0, 40, 58, 1);
+    color: white;
+}
+.editCB {
+    width: 70%;
+}
+.editCB input{
+    transform:scale(1.7);
+}
+.userSaveBTN{
+    border-radius:10px;
+    border:none;
+    height:50px;
+    width:200px;
+    background-color:darkgreen;
+    font-size:20px;
+    font-weight:bold;
+    color:white;
+    cursor:pointer;
+}
+.userSaveBTN:hover{
+    transition-duration:200ms;
+    background-color:white;
+    color:darkgreen;
+}
+.userDeleteBTN {
+    border-radius: 10px;
+    border: none;
+    height: 50px;
+    width: 200px;
+    background-color: rgb(255, 0, 0);
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+}
+.userDeleteBTN:hover {
+    transition-duration: 200ms;
+    background-color: white;
+    color: rgb(255, 0, 0);
+}
+/*ADMİN KULLANICILAR(DEFAULT) SAYFASI SON*/
+
+/*ADMİN ÜRÜNLER SAYFASI*/
+
+/*ADMİN ÜRÜNLER SAYFASI SON*/
+
+/*ADMİN SİPARİŞLER SAYFASI*/
+
+/*ADMİN SİPARİŞLER SAYFASI SON*/
+
+/*ADMİN KULLANICI MESAJLARI SAYFASI*/
+
+/*ADMİN KULLANICI MESAJLARI SAYFASI SON*/
+
+/*ADMİN SİTE HAKKINDA SAYFASI*/
+
+/*ADMİN SİTE HAKKINDA SAYFASI SON*/
