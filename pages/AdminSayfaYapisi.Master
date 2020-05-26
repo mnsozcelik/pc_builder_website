@@ -1,4 +1,4 @@
-﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="AdminSayfaYapisi.master.cs" Inherits="pc_toplama_sistemi.AdminSayfaYapisi" EnableViewState="False" %>
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="AdminSayfaYapisi.master.cs" Inherits="pc_toplama_sistemi.AdminSayfaYapisi" EnableViewState="True" %>
 
 <!DOCTYPE html>
 

@@ -13,23 +13,52 @@ namespace pc_toplama_sistemi.pages
         SqlClass cnnclss = new SqlClass();
         protected void Page_Load(object sender, EventArgs e)
         {
+            getAllUsers();
+        }
+        protected void userSearchButton_Click(object sender, EventArgs e)
+        {
+            getUserDataByID();
+        }
+
+        protected void FormView1_PageIndexChanging(object sender, FormViewPageEventArgs e)
+        {
+
+        }
+
+        protected void userSave_Click(object sender, EventArgs e)
+        {
+            updateUser();
+            getAllUsers();
+        }
+
+        protected void userDelete_Click(object sender, EventArgs e)
+        {
+            deleteUser();
+            getAllUsers();
+        }
+
+        public void getAllUsers()
+        {
             SqlCommand command = new SqlCommand("Select * From Tbl_Kullanicilar", cnnclss.Connection());
             SqlDataReader read = command.ExecuteReader();
             usersDataList.DataSource = read;
             usersDataList.DataBind();
             cnnclss.Connection().Close();
         }
-        protected void userSearchButton_Click(object sender, EventArgs e)
+        public void getUserDataByID ()
         {
             string userid = TextBox5.Text;
-            SqlCommand usercommand = new SqlCommand("Select * From Tbl_Kullanicilar where Kullaniciid='"+ userid +"'", cnnclss.Connection());
+            SqlCommand usercommand = new SqlCommand("Select * From Tbl_Kullanicilar where Kullaniciid='" + userid + "'", cnnclss.Connection());
             SqlDataReader userread = usercommand.ExecuteReader();
             UserDataView.DataSource = userread;
             UserDataView.DataBind();
             cnnclss.Connection().Close();
         }
+        public void updateUser()
+        {
 
-        protected void FormView1_PageIndexChanging(object sender, FormViewPageEventArgs e)
+        }
+        public void deleteUser()
         {
 
         }

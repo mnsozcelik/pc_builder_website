@@ -52,8 +52,8 @@
                 </ItemTemplate>
             </asp:FormView>
             <br /><br />
-            <asp:Button ID="userSave" CssClass="userSaveBTN" runat="server" Text="KAYDET" />
-            <asp:Button ID="userDelete" CssClass="userDeleteBTN" runat="server" Text="SİL" />
+            <asp:Button ID="userSave" CssClass="userSaveBTN" OnClick="userSave_Click" runat="server" Text="KAYDET" />
+            <asp:Button ID="userDelete" CssClass="userDeleteBTN" OnClick="userDelete_Click" runat="server" Text="SİL" />
             
         </asp:Panel>
         <script type="text/javascript">
