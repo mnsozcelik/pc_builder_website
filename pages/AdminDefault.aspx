@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/pages/AdminSayfaYapisi.Master" AutoEventWireup="true" CodeBehind="AdminDefault.aspx.cs" Inherits="pc_toplama_sistemi.pages.AdminDefault" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/pages/AdminSayfaYapisi.Master" AutoEventWireup="true" CodeBehind="AdminDefault.aspx.cs" Inherits="pc_toplama_sistemi.pages.AdminDefault" EnableViewState="False" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <strong class="adminSayfaBasligi"><i class="fas fa-users"> </i> Kullanıcılar</strong>
     <asp:Label ID="temptemp" runat="server" Text=""></asp:Label>
