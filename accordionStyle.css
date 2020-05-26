@@ -1,4 +1,13 @@
-﻿.collapse-content {
+﻿
+* {
+    font-family: Arial;
+    list-style: none;
+    text-decoration: none;
+}
+
+
+
+.collapse-content {
     width:65%;
     left:0px;
     position:relative;
@@ -7,8 +16,6 @@
     border-color:transparent;
     border-radius:5px;
 }
-
-
 
 .collapse {
     background: #fff;
