@@ -978,8 +978,6 @@ body {
 
 /*ADMİN ÜRÜNLER SAYFASI*/
 .productsGeneralPanel{
-    
-    height:480px;
     display:block;
     padding: 5px;
     max-height:500px;
@@ -1019,20 +1017,20 @@ body {
     position: relative;
     right: -115px;
     bottom: -40px;
-    background-color:crimson;
+    background-color:rgba(0, 130, 189, 1);
     color:white;
     font-size:18px;
     font-weight:bold;
-    width:50px;
+    width:100px;
     height:50px;
     border-color:transparent;
     border-radius:15px;
 }
-.productButton:hover{
-    transition-duration:200ms;
-    background-color:white;
-    color:crimson;
-    cursor:pointer;
+.productButton:hover {
+    transition-duration: 200ms;
+    background-color: white;
+    color: rgba(0, 130, 189, 1);
+    cursor: pointer;
 }
 .productID {
     position:relative;
@@ -1157,6 +1155,112 @@ body {
 }
 
 /*ADMİN ÜRÜNLER SAYFASI SON*/
+
+/*ADMİN ÜÜRN DETAY SAYFASI*/
+.prdForm {
+    height:490px;
+    width:100%;
+
+}
+.prdPanel {
+    height: 490px;
+    width: 100%;
+    background-color: aqua;
+}
+.prdHead {
+    height:50px;
+    background-color:antiquewhite;
+    width:100%
+}
+.prdHBrand {
+    height:100%;
+    font:bold 35px arial;
+    float:left;
+    padding:5px;
+}
+.prdHName {
+    height: 100%;
+    font: 100 30px arial;
+    float: left;
+    padding: 9px;
+}
+.prdDetails {
+    margin:auto;
+    width:90%;
+    height:auto;
+    background-color:blue;
+    position:relative;
+}
+.prdDetails > table{
+    position:relative;
+    top:25%;
+    width:100%;
+    border:solid;
+}
+tr{
+    height:40px;
+    width:auto;
+    border:solid;
+}
+tr > td:first-child {
+    height:auto;
+    width:30%;
+    border:solid;
+}
+.prdLabels {
+    font-weight:bold;
+    float:left;
+    width:100%;
+    height:100%;
+    font-size:20px;
+    background-color:brown;
+}
+.prdDetail {
+    font-weight: bold;
+    width:100%;
+    height:23px;
+    font-size:20px;
+    
+}
+.prdBTN{
+    margin:5px 5px 0px 5px;
+    height:35px;
+    border:solid;
+    font-size:18px;
+    font-weight:bold;
+    border-radius:15px;
+    border-color:transparent;
+    cursor:pointer;
+}
+.prdDetailBackBTN{
+    background-color: rgba(0, 130, 189, 1);
+    color:white;
+}
+.prdDetailBackBTN:hover{
+    transition-duration:200ms;
+    background-color: white;
+    color:rgba(0, 130, 189, 1);
+}
+.prdDetailSaveBTN {
+    background-color: darkgreen;
+    color: white;
+}
+.prdDetailSaveBTN:hover {
+    transition-duration: 200ms;
+    background-color: white;
+    color: darkgreen;
+}
+.prdDetailDeleteBTN {
+    background-color: rgb(255, 0, 0);
+    color: white;
+}
+.prdDetailDeleteBTN:hover {
+    transition-duration: 200ms;
+    background-color: white;
+    color: rgb(255, 0, 0);
+}
+
+/*ADMİN ÜRÜN DETAY SAYFASI SON*/
 
 /*ADMİN SİPARİŞLER SAYFASI*/
 
