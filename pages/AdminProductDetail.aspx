@@ -1,8 +1,6 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/pages/AdminSayfaYapisi.Master" AutoEventWireup="true" CodeBehind="AdminProductDetail.aspx.cs" Inherits="pc_toplama_sistemi.pages.AdminProductDetail" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     
-    <%--<asp:FormView ID="prdForm" CssClass="prdForm" runat="server">
-        <ItemTemplate>--%>
             <asp:Panel ID="prdPanel" CssClass="prdPanel" runat="server">
                 <asp:Panel ID="prdHead" CssClass="prdHead" runat="server">
                     <asp:Label ID="prdHBrand" CssClass="prdHBrand" runat="server" Text="MARKA"></asp:Label>
@@ -22,7 +20,7 @@
                         <tr>
                             <td><asp:Label ID="prdCategory" CssClass="prdLabels" runat="server" Text="Ürün Kategorisi:"></asp:Label></td>
                             <td>
-                                <asp:DropDownList ID="prdCategoryList" CssClass="prdDetail"  runat="server">
+                                <asp:DropDownList ID="prdCategoryList" CssClass="prdDetail prdCategoryDDL"  runat="server">
                                     <asp:ListItem Value="1"> İşlemci </asp:ListItem>
                                     <asp:ListItem Value="2"> Anakart </asp:ListItem>
                                     <asp:ListItem Value="3"> RAM </asp:ListItem>
@@ -42,10 +40,9 @@
                         </tr>
                     </table>
                 </asp:Panel>
-                <asp:Button ID="prdDetailBackBTN" CssClass="prdDetailBackBTN prdBTN" runat="server" Text="GERİ" />
-                <asp:Button ID="prdDetailSaveBTN" CssClass="prdDetailSaveBTN prdBTN" runat="server" Text="KAYDET" />
-                <asp:Button ID="prdDetailDeleteBTN" CssClass="prdDetailDeleteBTN prdBTN" runat="server" Text="SİL" />
+                <asp:Button ID="prdDetailBackBTN" CssClass="prdDetailBackBTN prdBTN" PostBackUrl="~/pages/AdminProducts.aspx" runat="server" Text="GERİ" />
+                <asp:Button ID="prdDetailSaveBTN" CssClass="prdDetailSaveBTN prdBTN" OnClick="prdDetailSaveBTN_Click" runat="server" Text="KAYDET" />
+                <asp:Button ID="prdDetailDeleteBTN" CssClass="prdDetailDeleteBTN prdBTN" OnClick="prdDetailDeleteBTN_Click" runat="server" Text="SİL" />
             </asp:Panel>
-        <%--</ItemTemplate>
-    </asp:FormView>--%>
+
 </asp:Content>
