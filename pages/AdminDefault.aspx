@@ -1,10 +1,12 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/pages/AdminSayfaYapisi.Master" AutoEventWireup="true" CodeBehind="AdminDefault.aspx.cs" Inherits="pc_toplama_sistemi.pages.AdminDefault" EnableViewState="False" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <strong class="adminSayfaBasligi"><i class="fas fa-users"> </i> Kullanıcılar</strong>
+    <hr />
     <br />
     <asp:Panel ID="usersGeneralPanel" CssClass="usersGeneralPanel" runat="server">
         <asp:Panel ID="usersPanel" CssClass="usersPanel" runat="server">
             <strong class="adminSayfaBasligi">Kullanıcılar</strong>
+            <hr />
             <br />
             <asp:DataList ID="usersDataList" CssClass="usersDataList" runat="server">
                 <ItemTemplate>
@@ -19,8 +21,8 @@
         </asp:Panel>
         <asp:Panel ID="usersEditPanel" CssClass="usersEditPanel" runat="server">
             <asp:Label ID="adminSayfaBasligi" CssClass="adminSayfaBasligi" Text="Kullanıcı Bilgileri" runat="server" />
+            <hr />
             <br />
-            
             <asp:TextBox ID="TextBox5" CssClass="editTBB" runat="server" Text=""></asp:TextBox> 
             <asp:Button ID="userSearchButton" CssClass="editTBBBTN" OnClick="userSearchButton_Click" runat="server" Text="Ara" />
             

@@ -1058,8 +1058,6 @@ body {
 }
 
 
-
-
 .usersEditPanel {
     height: 100%;
     width: 38%;
@@ -1167,21 +1165,28 @@ body {
     width: 100%;
 }
 .prdHead {
-    height:50px;
-    background-color:antiquewhite;
-    width:100%
+    height: auto;
+    width: 100%;
+    text-align: center;
+    padding: 0;
 }
 .prdHBrand {
     height:100%;
     font:bold 35px arial;
-    float:left;
-    padding:5px;
+    color:white;
+    padding-left:5px;
+    padding-right:5px;
+    margin:0;
+    background-color:rgba(0, 40, 58, 1);
 }
 .prdHName {
     height: 100%;
-    font: 100 30px arial;
-    float: left;
-    padding: 9px;
+    margin:0;
+    font: 35px arial;
+    color: white;
+    padding-left: 5px;
+    padding-right: 5px;
+    background-color: rgba(0, 130, 189, 1);
 }
 .prdDetails {
     margin:auto;
@@ -1262,6 +1267,112 @@ body {
 /*ADMİN SİPARİŞLER SAYFASI SON*/
 
 /*ADMİN KULLANICI MESAJLARI SAYFASI*/
+
+.messagesGeneralPanel {
+    height: 440px;
+    display: block;
+    padding: 5px;
+    max-height: 440px;
+}
+.messagesPanel {
+    height: 100%;
+    width: 45%;
+    position: relative;
+    left: 0px;
+    float: left;
+    overflow-y: auto;
+}
+.messageRow{
+    border-radius:10px;
+    background-color:rgba(0, 130, 189, 1);
+    color:white;
+    float:left;
+    width:100%;
+    height:auto;
+    border-bottom:solid;
+    border-top:solid;
+    border-color:white;
+    border-width:1px;
+}
+.messageButton {
+    width: 20%;
+    font-size: 15px;
+    font-weight: bold;
+    float: right;
+    border: solid;
+    border-color: transparent;
+    color: white;
+    background-color: rgba(0, 40, 58, 1);
+    cursor: pointer;
+}
+.messageButton:hover{
+    transition-duration:200ms;
+    background-color:white;
+    color: rgba(0, 40, 58, 1);
+}
+.messageID {
+    height: 100%;
+    width: 20%;
+    font-size: 18px;
+    float: left;
+}
+.messageName {
+    height: 100%;
+    width: 60%;
+    font-size: 18px;
+    float: left;
+}
+.messagesDataList {
+    width: 100%;
+}
+
+
+
+.messagesEditPanel {
+    height: auto;
+    width: 47%;
+    float: right;
+    position: relative;
+    right: 0px;
+}
+.editLabel{
+    font-weight:bold;
+    float:left;
+    width:20%;
+    text-align:left;
+}
+.msgLabel {
+    position:relative;
+    left:45px;
+    float:left;
+    text-align:left;
+    height:auto;
+    width:70%;
+}
+
+.messageDeleteBTN {
+    margin:20px;
+    position:relative;
+    left:0;
+    border-radius: 10px;
+    border: none;
+    height: 50px;
+    width: 200px;
+    background-color: rgb(255, 0, 0);
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+}
+.messageDeleteBTN:hover {
+    transition-duration: 200ms;
+
+    background-color: white;
+    color: rgb(255, 0, 0);
+}
+.messagesDataList{
+
+}
 
 /*ADMİN KULLANICI MESAJLARI SAYFASI SON*/
 

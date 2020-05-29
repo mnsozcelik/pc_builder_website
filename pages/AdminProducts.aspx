@@ -1,8 +1,9 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/pages/AdminSayfaYapisi.Master" AutoEventWireup="true" CodeBehind="AdminProducts.aspx.cs" Inherits="pc_toplama_sistemi.pages.AdminProducts" EnableViewState="False" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+    <strong class="adminSayfaBasligi"><i class="fas fa-memory"> </i> Ürünler</strong>
+    <hr />
     <asp:Panel ID="productsGeneralPanel" CssClass="productsGeneralPanel" runat="server">
         <asp:Panel ID="productsPanel" CssClass="productsPanel" runat="server">
-            <strong class="adminSayfaBasligi">ÜRÜNLER</strong>
             <br />
             <asp:DataList ID="productsDataList" CssClass="productsDataList" runat="server">
                 <ItemTemplate>
