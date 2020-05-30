@@ -1378,4 +1378,21 @@ body {
 
 /*ADMİN SİTE HAKKINDA SAYFASI*/
 
+.siteInfoUpdateBTN{
+    border:solid transparent;
+    background-color:darkgreen;
+    height:50px;
+    width:100px;
+    color:white;
+    font-size:18px;
+    font-weight:bold;
+    font-family:Arial;
+    border-radius:15px;
+}
+.siteInfoUpdateBTN:hover{
+    transition-duration:200ms;
+    cursor:pointer;
+    background-color:white;
+    color:darkgreen;
+}
 /*ADMİN SİTE HAKKINDA SAYFASI SON*/
