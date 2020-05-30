@@ -27,7 +27,7 @@
                     <asp:Image ID="productImage" ImageUrl='<%# Eval("ParcaResim") %>' CssClass="mainPageProductImage" runat="server" />
                     <br />
                     <asp:Label ID="productCategory" CssClass="mainPageProductCategory" runat="server" Text='<%# Eval("KategoriAdi") %>'></asp:Label>
-                    <asp:Button ID="productButton" CssClass="mainPageProductButton" runat="server" Text="Detay" />
+                    <asp:Button ID="productButton" CssClass="mainPageProductButton" PostBackUrl='<%# "ProductDetail.aspx?Parcaid=" + Eval("Parcaid") %>' runat="server" Text="Detay" />
                 </asp:Panel>
                 </asp:Panel>
             </ItemTemplate>

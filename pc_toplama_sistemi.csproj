@@ -1746,6 +1746,7 @@
     <Content Include="pages\Default.aspx" />
     <Content Include="pages\Login.aspx" />
     <Content Include="pages\PCBuilder.aspx" />
+    <Content Include="pages\ProductDetail.aspx" />
     <Content Include="pages\Products.aspx" />
     <Content Include="pages\SignUp.aspx" />
     <Content Include="src\cpu.png" />
@@ -1854,6 +1855,13 @@
     </Compile>
     <Compile Include="pages\PCBuilder.aspx.designer.cs">
       <DependentUpon>PCBuilder.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pages\ProductDetail.aspx.cs">
+      <DependentUpon>ProductDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pages\ProductDetail.aspx.designer.cs">
+      <DependentUpon>ProductDetail.aspx</DependentUpon>
     </Compile>
     <Compile Include="pages\Products.aspx.cs">
       <DependentUpon>Products.aspx</DependentUpon>

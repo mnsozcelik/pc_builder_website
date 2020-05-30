@@ -214,7 +214,6 @@ body {
 }
 .mainPageProductName {
     position: relative;
-    height:auto;
     font-size:19px;
     font-weight:100;
 }
@@ -234,24 +233,28 @@ body {
 }
 
 .mainPageProductButton {
-    float: right;
-    width: 20%;
+    position: relative;
+    float:right;
+    bottom: -45px;
+    width: 35%;
     border-radius: 35px;
     border-style: solid;
-    border-color: white;
-    height:50px;
+    border-color: transparent;
+    height: 50px;
     font-size: 18px;
-    color:white;
-    margin: 15px;
+    color: white;
     font-family: Arial;
     font-weight: bold;
-    background-color:rgba(0, 130, 189, 1);
+    background-color: rgba(0, 130, 189, 1);
 }
 
 .mainPageProductButton:hover{
-    transition-duration:250ms;
-    border-color:rgba(0, 130, 189, 1);
+    transition-duration: 200ms;
+    background-color:white;
+    color:rgba(0, 130, 189, 1);
+    cursor:pointer;
 }
+
 
 .mainPageDataList>tbody>tr>td{
     width:300px;
@@ -266,7 +269,9 @@ body {
 }
 
 .mainPageProductCategory {
-    float: left;
+    position:relative;
+    bottom:-45px;
+    float:left;
     background-color: rgb(224, 118, 16);
     color: white;
     padding: 10px;
@@ -300,11 +305,11 @@ body {
     color: rgba(0, 130, 189, 1);
 }
 
-    .category_item:hover {
-        transition-duration: 250ms;
-        background-color: rgba(0, 130, 189, 1);
-        color: white;
-    }
+.category_item:hover {
+    transition-duration: 250ms;
+    background-color: rgba(0, 130, 189, 1);
+    color: white;
+}
 
 
 .productPageProducts {
@@ -368,23 +373,26 @@ body {
 }
 
 .productPageProductButton {
+    position: relative;
     float: right;
-    width: 20%;
+    bottom: -45px;
+    width: 35%;
     border-radius: 35px;
     border-style: solid;
-    border-color: white;
+    border-color: transparent;
     height: 50px;
     font-size: 18px;
     color: white;
-    margin: 15px;
     font-family: Arial;
     font-weight: bold;
     background-color: rgba(0, 130, 189, 1);
 }
 
 .productPageProductButton:hover {
-    transition-duration: 250ms;
-    border-color: rgba(0, 130, 189, 1);
+    transition-duration: 200ms;
+    background-color:white;
+    color:rgba(0, 130, 189, 1);
+    cursor:pointer;
 }
 
 .productPageDataList > tbody > tr > td {
@@ -403,13 +411,59 @@ body {
 
 .productPageProductCategory {
     float: left;
+    position:relative;
+    bottom:-45px;
     background-color: rgb(224, 118, 16);
     color: white;
     padding: 10px;
 }
 /*ÜRÜNLER SAYFASI ÜRÜNLERİ SON*/
 
+/*ÜRÜN DETAY SAYFASI*/
 
+.prodImgPNL{
+    height:450px;
+    margin:10px;
+    width:40%;
+    float:left;
+}
+.prodInfoPNL {
+    height: 450px;
+    margin: 10px;
+    width: 55%;
+    float:right;
+}
+.prodImg{
+    width:100%;
+}
+.prodInfoBrand{
+    float:left;
+    font-size:25px;
+    font-weight:bold;
+}
+.prodInfoName {
+    float: left;
+    font-size: 25px;
+}
+.prodInfoAttribute{
+    position:relative;
+    left:-265px;
+    background-color:rgba(0, 130, 189, 1);
+    padding:10px;
+    color:white;
+}
+.prodInfoCategory{
+    position:absolute;
+    right:0;
+    bottom:100px;
+    padding:15px;
+    font-size:25px;
+    font-weight:bold;
+    background-color:rgb(224, 118, 16);
+    color:white;
+}
+
+/*ÜRÜN DETAY SAYFASI SON*/
 /*HAKKIMIZDA SAYFASI*/
 .aboutUsSection {
     text-align: center;
