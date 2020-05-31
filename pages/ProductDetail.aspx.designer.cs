@@ -69,6 +69,15 @@ namespace pc_toplama_sistemi.pages
         protected global::System.Web.UI.WebControls.Label prodInfoAttribute;
 
         /// <summary>
+        /// prodBuild denetimi.
+        /// </summary>
+        /// <remarks>
+        /// Otomatik üretilmiş alan.
+        /// Değiştirmek için, alan bildirimini tasarımcı dosyasından arka plan kod dosyasına taşıyın.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label prodBuild;
+
+        /// <summary>
         /// prodInfoCategory denetimi.
         /// </summary>
         /// <remarks>

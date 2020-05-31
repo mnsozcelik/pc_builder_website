@@ -40,6 +40,9 @@ namespace pc_toplama_sistemi
         protected void AdminLogoutBTN_Click(object sender, EventArgs e)
         {
             Session.Remove("User");
+            Session.Remove("UserID");
+            Session.Remove("UserNAME");
+            Session.Remove("UserMAIL");
             Response.Redirect("~/pages/Default.aspx");
         }
     }

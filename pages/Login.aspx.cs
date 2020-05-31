@@ -39,6 +39,14 @@ namespace pc_toplama_sistemi.pages
                 cnnclss.Connection().Close();
                 String output = command.ExecuteScalar().ToString();
                 Session["User"] = usernameLogin.Text;
+                SqlCommand usercommand = new SqlCommand("select * from Tbl_Kullanicilar where KullaniciAdi='"+ Session["User"] +"'", cnnclss.Connection());
+                SqlDataReader userdr = usercommand.ExecuteReader();
+                while (userdr.Read())
+                {
+                    Session["UserID"] = userdr[0].ToString();
+                    Session["UserNAME"] = userdr[1].ToString();
+                    Session["UserMAIL"] = userdr[5].ToString();
+                }
                 if (output == "1")
                 {
                     SqlCommand commandAdmin = new SqlCommand("select isAdmin from Tbl_Kullanicilar where KullaniciAdi= '" + usernameLogin.Text + "'", cnnclss.Connection());

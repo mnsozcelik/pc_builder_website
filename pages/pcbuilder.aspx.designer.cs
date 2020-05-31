@@ -258,30 +258,12 @@ namespace pc_toplama_sistemi.pages
         protected global::System.Web.UI.WebControls.Panel sepetProPanel;
 
         /// <summary>
-        /// sepetPro denetimi.
+        /// userBasketDataList denetimi.
         /// </summary>
         /// <remarks>
         /// Otomatik üretilmiş alan.
         /// Değiştirmek için, alan bildirimini tasarımcı dosyasından arka plan kod dosyasına taşıyın.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Panel sepetPro;
-
-        /// <summary>
-        /// sepetProName denetimi.
-        /// </summary>
-        /// <remarks>
-        /// Otomatik üretilmiş alan.
-        /// Değiştirmek için, alan bildirimini tasarımcı dosyasından arka plan kod dosyasına taşıyın.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label sepetProName;
-
-        /// <summary>
-        /// sepetProCB denetimi.
-        /// </summary>
-        /// <remarks>
-        /// Otomatik üretilmiş alan.
-        /// Değiştirmek için, alan bildirimini tasarımcı dosyasından arka plan kod dosyasına taşıyın.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button sepetProCB;
+        protected global::System.Web.UI.WebControls.DataList userBasketDataList;
     }
 }

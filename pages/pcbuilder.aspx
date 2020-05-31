@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/pages/SayfaYapisi.Master" AutoEventWireup="true" CodeBehind="PCBuilder.aspx.cs" Inherits="pc_toplama_sistemi.pages.PCBuilder" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/pages/SayfaYapisi.Master" AutoEventWireup="true" EnableEventValidation="false" CodeBehind="PCBuilder.aspx.cs" Inherits="pc_toplama_sistemi.pages.PCBuilder" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <!-----------PC BUİLDER------------------>
             <div class="collapse-content">
@@ -120,14 +120,18 @@ group by Tbl_Parcalar.Parcaid,Tbl_Parcalar.ParcaMarka,Tbl_Parcalar.ParcaAd"></as
                 <asp:Label ID="sepet" runat="server" Text="SEPET"></asp:Label>
                 <hr />
                 <asp:Panel ID="sepetProPanel" CssClass="sepetProPanel" runat="server">
-                    <asp:Panel ID="sepetPro" CssClass="sepetPro" runat="server">
-                        <asp:Label ID="sepetProName" CssClass="sepetProName" runat="server" Text="ÜRÜN ADI"></asp:Label>
+                    <asp:DataList ID="userBasketDataList" runat="server">
+                        <ItemTemplate>
+                            <asp:Panel ID="sepetPro" CssClass="sepetPro" runat="server">
+                                <asp:Label ID="sepetProBrand" CssClass="sepetProName" runat="server" Text='<%#Eval("ParcaMarka") %>'></asp:Label>
+                                <asp:Label ID="sepetProName" CssClass="sepetProName" runat="server" Text='<%#Eval("ParcaAd") %>'></asp:Label>
+                                <asp:Button ID="sepetProBTN" CssClass="sepetProBTN" OnClick="sepetProBTN_Click" PostBackUrl='<%# "PCBuilder.aspx?Silid=" + Eval("Parcaid") %>' runat="server" Text="X" />
+                            </asp:Panel>
+                            <br />
+                        </ItemTemplate>
                         
-                        <asp:Button ID="sepetProCB" CssClass="sepetProCB" runat="server" Text="X" />
-                    </asp:Panel>
+                    </asp:DataList>
                 </asp:Panel>
             </asp:Panel>
-
-
                 <!-----------PC BUİLDER END-------------->
 </asp:Content>

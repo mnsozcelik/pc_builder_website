@@ -12,6 +12,7 @@
         <br />
         <br />
         <asp:Label ID="prodInfoAttribute" CssClass="prodInfoAttribute" runat="server" Text='<%#Eval("ParcaOzellik") %>'></asp:Label>
-        <asp:Label ID="prodInfoCategory" CssClass="prodInfoCategory" runat="server" Text='<%#Eval("ParcaKategori") %>'></asp:Label>
+        <a href="PCBuilder.aspx"><asp:Label ID="prodBuild" CssClass="prodBuild" runat="server" >BİLGİSAYAR TOPLA <i class="fas fa-tools"></i></asp:Label></a>
+        <a href="Products.aspx"><asp:Label ID="prodInfoCategory" CssClass="prodInfoCategory" runat="server" Text='<%#Eval("ParcaKategori") %>'></asp:Label></a>
     </asp:Panel>
 </asp:Content>
