@@ -566,28 +566,7 @@ body {
 
 
 /*PC BUİLD SAYFASI*/
-.productTable {
-    min-height:75px;
-    width:100%;
-    border: medium solid transparent;
-}
-.productTable input{
-    transform: scale(2);
-    float:left;
-    margin:15px;
-}
-.productTable label {
-    font-family: Arial;
-    font-weight: bold;
-    font-size: 18px;
-    margin-left:15px;
-}
-.productTable td{
-    background-color:rgb(159, 159, 159);
-    min-height :50px;
-    height:auto;
-    max-height:100px;
-}
+/*----------------------------------*/
 .cpus {
     overflow-y: auto;
     max-height: 250px;
@@ -612,7 +591,7 @@ body {
     overflow-y: auto;
     max-height: 250px;
 }
-
+/*-----------------------------------*/
 .sepetPanel {
     box-shadow: 0px 7px 34px -1px rgba(0,0,0,0.55);
     border-radius: 10px;
@@ -635,12 +614,14 @@ body {
     background-color:rgb(159, 159, 159);
     height:auto;
 }
+.sepetProPanel table tr{
+    border:solid;
+    border-color:rgb(128, 128, 128);
+}
 .sepetPro{
     position:relative;
-
-    min-height:35px;
+    min-height:20px;
     height:auto;
-    border-bottom:dotted;
 }
 .sepetProBTN{
     cursor:pointer;
@@ -653,21 +634,55 @@ body {
     color:white;
     font-weight:bold;
     float:right;
-    position:relative;
     right:0;
-    bottom:20px;
-
 }
 .sepetProName{
-    font-size:18px;
-    font-weight:bold;
+    float:left;
+    font-size:16px;
     color:aliceblue;
     text-align:left;
     width:80%;
-
 }
+/*---------------------------------*/
+table {
+    width:100%;
+}
+table td{
+    width: 100%;
+}
+table  td tr{
+    width: 100%;
+}
+.cartPrdPNL{
+    width:100%;
+    background-color:rgb(128, 128, 128);
+    height:29px;
+}
+.cartPrdName {
+    float:left;
+    text-align:left;
+    width:80%;
+    color: white;
+    font-size: 15px;
+}
+.cartPrdBTN{
+    width:20%;
+    background-color:rgba(0, 130, 189, 1);
+    color:white;
+    font-size:18px;
+    float:right;
+    font-weight:bold;
+    border:solid;
+    border-color:transparent;
+    cursor:pointer;
+}
+.cartPrdBTN:hover {
+    transition-duration: 200ms;
+    background-color: white;
+    color: rgba(0, 130, 189, 1);
+}
+/*---------------------------------*/
 /*PC BUİLD SAYFASI SON*/
-
 .response {
     transition-duration: 550ms;
     position: absolute;
@@ -683,7 +698,6 @@ body {
     width: auto;
     height: 25px;
 }
-
 /*LOGIN VE SIGNUP SAYFASI */
 .login {
     position: fixed;

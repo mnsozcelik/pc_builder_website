@@ -13,10 +13,7 @@ namespace pc_toplama_sistemi.pages
         SqlClass cnnclss = new SqlClass();
         protected void Page_Load(object sender, EventArgs e)
         {
-            
-            
                 getAllUsers();
-            
         }
         protected void userSearchButton_Click(object sender, EventArgs e)
         {

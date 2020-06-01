@@ -3,24 +3,20 @@
     list-style: none;
     text-decoration: none;
 }
-
-
-
 .collapse-content {
-    width:65%;
+    width:70%;
     left:0px;
     position:relative;
-    margin:10px 50px;
+    margin:10px 15px;
     border:solid;
     border-color:transparent;
     border-radius:5px;
 }
-
 .collapse {
     background: #fff;
 }
-
     .collapse a {
+
         display: block;
         font-size: 40px;
         font-weight: 500;
@@ -29,7 +25,6 @@
         position: relative;
         height:50px;
         text-align:left;
-
     }
 
         .collapse a.cpu {

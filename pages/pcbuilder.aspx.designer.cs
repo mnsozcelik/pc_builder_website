@@ -33,22 +33,13 @@ namespace pc_toplama_sistemi.pages
         protected global::System.Web.UI.WebControls.Panel cpus;
 
         /// <summary>
-        /// cpusTable denetimi.
+        /// cpudatalist denetimi.
         /// </summary>
         /// <remarks>
         /// Otomatik üretilmiş alan.
         /// Değiştirmek için, alan bildirimini tasarımcı dosyasından arka plan kod dosyasına taşıyın.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RadioButtonList cpusTable;
-
-        /// <summary>
-        /// pcbuild denetimi.
-        /// </summary>
-        /// <remarks>
-        /// Otomatik üretilmiş alan.
-        /// Değiştirmek için, alan bildirimini tasarımcı dosyasından arka plan kod dosyasına taşıyın.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.SqlDataSource pcbuild;
+        protected global::System.Web.UI.WebControls.DataList cpudatalist;
 
         /// <summary>
         /// mainboardImg denetimi.
@@ -69,22 +60,13 @@ namespace pc_toplama_sistemi.pages
         protected global::System.Web.UI.WebControls.Panel mainboards;
 
         /// <summary>
-        /// mainboardTable denetimi.
+        /// mainboarddatalist denetimi.
         /// </summary>
         /// <remarks>
         /// Otomatik üretilmiş alan.
         /// Değiştirmek için, alan bildirimini tasarımcı dosyasından arka plan kod dosyasına taşıyın.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RadioButtonList mainboardTable;
-
-        /// <summary>
-        /// mainboardDB denetimi.
-        /// </summary>
-        /// <remarks>
-        /// Otomatik üretilmiş alan.
-        /// Değiştirmek için, alan bildirimini tasarımcı dosyasından arka plan kod dosyasına taşıyın.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.SqlDataSource mainboardDB;
+        protected global::System.Web.UI.WebControls.DataList mainboarddatalist;
 
         /// <summary>
         /// ramImg denetimi.
@@ -105,22 +87,13 @@ namespace pc_toplama_sistemi.pages
         protected global::System.Web.UI.WebControls.Panel rams;
 
         /// <summary>
-        /// ramTable denetimi.
+        /// ramdatalist denetimi.
         /// </summary>
         /// <remarks>
         /// Otomatik üretilmiş alan.
         /// Değiştirmek için, alan bildirimini tasarımcı dosyasından arka plan kod dosyasına taşıyın.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RadioButtonList ramTable;
-
-        /// <summary>
-        /// ramDB denetimi.
-        /// </summary>
-        /// <remarks>
-        /// Otomatik üretilmiş alan.
-        /// Değiştirmek için, alan bildirimini tasarımcı dosyasından arka plan kod dosyasına taşıyın.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.SqlDataSource ramDB;
+        protected global::System.Web.UI.WebControls.DataList ramdatalist;
 
         /// <summary>
         /// gpuImg denetimi.
@@ -141,22 +114,13 @@ namespace pc_toplama_sistemi.pages
         protected global::System.Web.UI.WebControls.Panel gpus;
 
         /// <summary>
-        /// gpuTable denetimi.
+        /// gpudatalist denetimi.
         /// </summary>
         /// <remarks>
         /// Otomatik üretilmiş alan.
         /// Değiştirmek için, alan bildirimini tasarımcı dosyasından arka plan kod dosyasına taşıyın.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RadioButtonList gpuTable;
-
-        /// <summary>
-        /// gpuDB denetimi.
-        /// </summary>
-        /// <remarks>
-        /// Otomatik üretilmiş alan.
-        /// Değiştirmek için, alan bildirimini tasarımcı dosyasından arka plan kod dosyasına taşıyın.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.SqlDataSource gpuDB;
+        protected global::System.Web.UI.WebControls.DataList gpudatalist;
 
         /// <summary>
         /// powersupImg denetimi.
@@ -177,22 +141,13 @@ namespace pc_toplama_sistemi.pages
         protected global::System.Web.UI.WebControls.Panel powersups;
 
         /// <summary>
-        /// powersupTable denetimi.
+        /// psudatalist denetimi.
         /// </summary>
         /// <remarks>
         /// Otomatik üretilmiş alan.
         /// Değiştirmek için, alan bildirimini tasarımcı dosyasından arka plan kod dosyasına taşıyın.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RadioButtonList powersupTable;
-
-        /// <summary>
-        /// psuDB denetimi.
-        /// </summary>
-        /// <remarks>
-        /// Otomatik üretilmiş alan.
-        /// Değiştirmek için, alan bildirimini tasarımcı dosyasından arka plan kod dosyasına taşıyın.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.SqlDataSource psuDB;
+        protected global::System.Web.UI.WebControls.DataList psudatalist;
 
         /// <summary>
         /// discImg denetimi.
@@ -213,22 +168,13 @@ namespace pc_toplama_sistemi.pages
         protected global::System.Web.UI.WebControls.Panel discs;
 
         /// <summary>
-        /// discTable denetimi.
+        /// discdatalist denetimi.
         /// </summary>
         /// <remarks>
         /// Otomatik üretilmiş alan.
         /// Değiştirmek için, alan bildirimini tasarımcı dosyasından arka plan kod dosyasına taşıyın.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RadioButtonList discTable;
-
-        /// <summary>
-        /// discDB denetimi.
-        /// </summary>
-        /// <remarks>
-        /// Otomatik üretilmiş alan.
-        /// Değiştirmek için, alan bildirimini tasarımcı dosyasından arka plan kod dosyasına taşıyın.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.SqlDataSource discDB;
+        protected global::System.Web.UI.WebControls.DataList discdatalist;
 
         /// <summary>
         /// sepetPanel denetimi.
@@ -265,5 +211,14 @@ namespace pc_toplama_sistemi.pages
         /// Değiştirmek için, alan bildirimini tasarımcı dosyasından arka plan kod dosyasına taşıyın.
         /// </remarks>
         protected global::System.Web.UI.WebControls.DataList userBasketDataList;
+
+        /// <summary>
+        /// response denetimi.
+        /// </summary>
+        /// <remarks>
+        /// Otomatik üretilmiş alan.
+        /// Değiştirmek için, alan bildirimini tasarımcı dosyasından arka plan kod dosyasına taşıyın.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label response;
     }
 }
