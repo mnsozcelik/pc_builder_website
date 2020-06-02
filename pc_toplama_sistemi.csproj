@@ -1738,6 +1738,7 @@
     <Content Include="pages\About.aspx" />
     <Content Include="pages\AdminDefault.aspx" />
     <Content Include="pages\AdminMessages.aspx" />
+    <Content Include="pages\AdminOrderDetail.aspx" />
     <Content Include="pages\AdminOrders.aspx" />
     <Content Include="pages\AdminProductDetail.aspx" />
     <Content Include="pages\AdminProducts.aspx" />
@@ -1745,6 +1746,7 @@
     <Content Include="pages\Contact.aspx" />
     <Content Include="pages\Default.aspx" />
     <Content Include="pages\Login.aspx" />
+    <Content Include="pages\OrderDetail.aspx" />
     <Content Include="pages\PCBuilder.aspx" />
     <Content Include="pages\ProductDetail.aspx" />
     <Content Include="pages\Products.aspx" />
@@ -1782,6 +1784,13 @@
     </Compile>
     <Compile Include="pages\AdminMessages.aspx.designer.cs">
       <DependentUpon>AdminMessages.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pages\AdminOrderDetail.aspx.cs">
+      <DependentUpon>AdminOrderDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pages\AdminOrderDetail.aspx.designer.cs">
+      <DependentUpon>AdminOrderDetail.aspx</DependentUpon>
     </Compile>
     <Compile Include="pages\AdminOrders.aspx.cs">
       <DependentUpon>AdminOrders.aspx</DependentUpon>
@@ -1848,6 +1857,13 @@
     </Compile>
     <Compile Include="pages\Login.aspx.designer.cs">
       <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pages\OrderDetail.aspx.cs">
+      <DependentUpon>OrderDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pages\OrderDetail.aspx.designer.cs">
+      <DependentUpon>OrderDetail.aspx</DependentUpon>
     </Compile>
     <Compile Include="pages\PCBuilder.aspx.cs">
       <DependentUpon>PCBuilder.aspx</DependentUpon>

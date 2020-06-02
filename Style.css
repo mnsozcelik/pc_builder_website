@@ -636,6 +636,11 @@ body {
     float:right;
     right:0;
 }
+.sepetProBTN:hover{
+    transition-duration:200ms;
+    color:crimson;
+    background-color:white;
+}
 .sepetProName{
     float:left;
     font-size:16px;
@@ -681,8 +686,120 @@ table  td tr{
     background-color: white;
     color: rgba(0, 130, 189, 1);
 }
+.makeorder{
+    width:50%;
+    height:30px;
+    background-color:darkgreen;
+    border:solid;
+    border-color:transparent;
+    color:white;
+    font-size:18px;
+    margin-top:5px;
+    margin-bottom:5px;
+    border-radius:0 20px 20px 0;
+    cursor:pointer;
+}
+.makeorder:hover{
+    transition-duration:200ms;
+    background-color:white;
+    color:darkgreen;
+    font-weight:bold;
+}
 /*---------------------------------*/
 /*PC BUİLD SAYFASI SON*/
+/*SİPARİŞ DETAY SAYFASI*/
+
+/*----------------------*/
+.orderDetailPanel {
+    position: relative;
+    margin: auto;
+    width: 60%;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0px 0px 19px 2px rgba(0,0,0,0.75);
+}
+.orderDetailLBL{
+    font-size:22px;
+}
+.userOrderDataList{
+    width:100%;
+
+}
+.orderPrd{
+    border-radius:15px;
+    height:65px;
+    background-color:rgba(0, 40, 58, 1);
+}
+.orderPrd:hover{
+    transition-duration:200ms;
+    box-shadow: 0px 0px 19px 2px rgba(0,0,0,1);
+}
+.orderPrdIMG{
+    width:auto;
+    float:left;
+    height:100%;
+}
+.orderPrdLBL{
+    color:white;
+    top:17%;
+    width:80%;
+    position:relative;
+    text-align:left;
+    margin:auto;
+    font-size:20px;
+}
+/*----------------------*/
+.orderInfoPanel{
+    height:auto;
+    width:100%;
+}
+.orderAdressLBL{
+    font-weight:bold;
+    position:relative;
+    bottom:90px;
+}
+.orderAdressTB{
+    height:100px;
+    width:25%;
+    max-height:100px;
+    min-height:100px;
+    max-width:200px;
+}
+.orderNoteLBL {
+    font-weight: bold;
+    position: relative;
+    bottom: 90px;
+}
+.orderNoteTB {
+    height: 100px;
+    width: 25%;
+    max-height: 100px;
+    min-height: 100px;
+    max-width: 200px;
+}
+/*----------------------*/
+.addOrderBTN {
+    margin: 10px;
+    position: relative;
+    right: -100px;
+    border: solid;
+    border-color: transparent;
+    width: 170px;
+    padding: 7px;
+    background-color: darkgreen;
+    color: white;
+    font-weight: bold;
+    border-radius: 15px;
+    font-size: 17px;
+    cursor: pointer;
+}
+.addOrderBTN:hover{
+    transition-duration:200ms;
+    background-color: white;
+    color: darkgreen;
+    box-shadow: 0px 0px 19px 2px rgba(0,0,0,0.45);
+}
+/*SİPARİŞ DETAY SAYFASI SON*/
 .response {
     transition-duration: 550ms;
     position: absolute;
@@ -1373,10 +1490,85 @@ table  td tr{
 
 /*ADMİN SİPARİŞLER SAYFASI*/
 
+.ordersGeneralPanel {
+    position: relative;
+    margin: auto;
+    width: 800px;
+    border-radius:5px;
+    box-shadow: 0px 0px 9px 0px rgba(0,0,0,0.75);
+}
+.ordersPanel{
+    width:800px;
+}
+.ordersDataList {
+    width: 800px;
+    background-color: rgb(128, 128, 128);
+}
+.orderRow {
+    width: 800px;
+    font-size:20px;
+    background-color:rgb(128, 128, 128);
+    color:white;
+    font-weight:bold;
+}
+.orderHeader {
+    width: 800px;
+    font-size: 20px;
+    background-color: rgba(0, 40, 58, 1);
+    color: white;
+    font-weight: bold;
+}
+.orderID {
+    padding-top:3px;
+    position: relative;
+    width: 5%;
+    float: left;
+    text-align: center;
+    background-color: rgb(128, 128, 128);
+}
+.orderUserName {
+    padding-top: 3px;
+    width: 40%;
+    float: left;
+    text-align: center;
+    background-color: rgb(128, 128, 128);
+}
+.orderName {
+    padding-top: 3px;
+    width: 30%;
+    float: left;
+    text-align: center;
+    background-color: rgb(128, 128, 128);
+}
+.orderButton {
+    float: right;
+    border: solid;
+    border-color: transparent;
+    background-color: rgba(0, 130, 189, 1);
+    color: white;
+    width: 20%;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 15px 0 0 15px;
+    font-weight: bold;
+}
+.orderButton:hover{
+    transition-duration:200ms;
+    background-color:white;
+    color:rgba(0, 130, 189, 1);
+}
+
 /*ADMİN SİPARİŞLER SAYFASI SON*/
+/*ADMİN SİPARİŞ DETAY SAYFASI*/
 
+.orderw {
+    position: relative;
+    margin: auto;
+    width: 60%;
+}
+
+/*ADMİN SİPARİŞ DETAY SAYFASI SON*/
 /*ADMİN KULLANICI MESAJLARI SAYFASI*/
-
 .messagesGeneralPanel {
     height: 440px;
     display: block;

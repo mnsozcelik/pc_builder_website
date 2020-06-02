@@ -135,5 +135,10 @@ namespace pc_toplama_sistemi.pages
             discdatalist.DataBind();
             cnnclss.Connection().Close();
         }
+
+        protected void makeorder_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("OrderDetail.aspx");
+        }
     }
 }

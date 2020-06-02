@@ -213,6 +213,15 @@ namespace pc_toplama_sistemi.pages
         protected global::System.Web.UI.WebControls.DataList userBasketDataList;
 
         /// <summary>
+        /// makeorder denetimi.
+        /// </summary>
+        /// <remarks>
+        /// Otomatik üretilmiş alan.
+        /// Değiştirmek için, alan bildirimini tasarımcı dosyasından arka plan kod dosyasına taşıyın.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button makeorder;
+
+        /// <summary>
         /// response denetimi.
         /// </summary>
         /// <remarks>

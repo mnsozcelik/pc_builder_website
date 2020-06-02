@@ -118,9 +118,9 @@
                             </asp:Panel>
                             <br />
                         </ItemTemplate>
-                        
                     </asp:DataList>
                 </asp:Panel>
+                <asp:Button ID="makeorder" CssClass="makeorder" OnClick="makeorder_Click" runat="server" Text="Sipariş Ver" />
             </asp:Panel>
     <asp:Label ID="response" CssClass="" runat="server" Text=""></asp:Label>
                 <!-----------PC BUİLDER END-------------->
