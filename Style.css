@@ -1,6 +1,4 @@
-﻿
-
-body {
+﻿body {
     margin:0;
     height:auto;
 }
@@ -649,13 +647,13 @@ body {
     width:80%;
 }
 /*---------------------------------*/
-table {
-    width:100%;
-}
-table td{
+.sepetProPanel table {
     width: 100%;
 }
-table  td tr{
+.sepetProPanel table td {
+    width: 100%;
+}
+.sepetProPanel table td tr {
     width: 100%;
 }
 .cartPrdPNL{
